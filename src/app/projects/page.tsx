@@ -1,4 +1,4 @@
-import Hero from '@/components/Hero'
+import Hero from '@/components/Sections/Hero'
 
 export default function ProjectsPage () {
   return (

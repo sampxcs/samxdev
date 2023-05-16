@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function ButtonCircle ({ children }: { children: ReactNode }) {
   return (
-    <Link href='/' className={styles.button}>
+    <Link href='/' className={styles.button} data-tooltip='CAMBIAR TEMA'>
       {children}
     </Link>
   )

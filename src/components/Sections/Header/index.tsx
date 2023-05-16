@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import styles from './header.module.css'
 
-import Theme from '../Icons/Theme'
+import Theme from '@/components/Icons/Theme'
 
-import Avatar from '../Avatar'
-import ButtonCircle from '../ButtonCircle'
+import Avatar from '@/components/Elements/Avatar'
+import ButtonCircle from '@/components/Buttons/ButtonCircle'
 
 const links = [
   {

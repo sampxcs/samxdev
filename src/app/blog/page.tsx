@@ -1,4 +1,5 @@
-import Hero from '@/components/Hero'
+import Feed from '@/components/Sections/Feed'
+import Hero from '@/components/Sections/Hero'
 
 export default function BlogPage () {
   return (
@@ -7,6 +8,7 @@ export default function BlogPage () {
         title='Explora mi Blog'
         page='blog'
       />
+      <Feed />
     </div>
   )
 }

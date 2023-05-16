@@ -2,7 +2,8 @@ import React from 'react'
 
 import './globals.css'
 import { Inter } from 'next/font/google'
-import Header from '@/components/Header'
+import Header from '@/components/Sections/Header'
+import LightMove from '@/components/Decorations/LightMove'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +20,7 @@ export default function RootLayout ({ children }: { children: React.ReactNode })
         <main>
           {children}
         </main>
-        <div style={{ height: '100vh' }} />
+        <LightMove />
       </body>
     </html>
   )
