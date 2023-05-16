@@ -1,0 +1,14 @@
+.button {
+  align-items: center;
+  aspect-ratio: 1/1;
+  background-color: var(--color-background-700);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  transition: opacity .2s ease-in-out;
+  width: 2.5rem;
+}
+
+.button:hover {
+  opacity: .85;
+}

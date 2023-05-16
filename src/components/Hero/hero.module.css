@@ -1,0 +1,24 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hello {
+  font-size: var(--font-size-5xl);
+  color: var(--color-primary-500);
+}
+
+.hero h1 {
+  font-size: var(--font-size-6xl);
+}
+
+.subtitle {
+  font-size: var(--font-size-5xl);
+  color: var(--color-background-400);
+}
+
+.description {
+  font-size: var(--font-size-4xl);
+  color: var(--color-background-400);
+}
