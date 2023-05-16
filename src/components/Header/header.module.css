@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   margin: 1.5rem auto;
-  max-width: var(--screen-xl);
+  max-width: var(--screen-lg);
   padding: 1rem;
 }
 
@@ -21,7 +21,8 @@
 .link {
   font-size: var(--font-size-md);
   text-decoration: none;
-  transition: color .2s ease-in-out;
+  transition: var(--transition);
+  transition-property: var(--transition-primary);
 }
 
 .nav ul li:nth-child(1):hover {

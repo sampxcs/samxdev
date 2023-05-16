@@ -46,9 +46,10 @@
   --color-background-900: #050606;
   --color-white: #ffffff;
   --color-black: #212529;
+  
   --screen-sm: 640px;
   --screen-md: 768px;
-  --screen-lg: 1024px;
+  --screen-lg: 1100px;
   --screen-xl: 1280px;
   --screen-2xl: 1536px;
   --font-size-2xs: .5rem; 
@@ -62,65 +63,50 @@
   --font-size-4xl: 2rem; 
   --font-size-5xl: 3rem; 
   --font-size-6xl: 4rem; 
-  --font-size-7xl: 6rem; 
+  --font-size-7xl: 5rem; 
   --rounded-sm: .5rem;
   --rounded-md: .875rem;
   --rounded-lg: 1.25rem;
   --rounded-xl: 1.75rem;
+  
   --shadow-sm: 0 .25rem .875rem rgb(0 0 0 / 25%);
   --shadow-md: 0 .25rem 1rem rgb(0 0 0 / 25%);
+
+  --timing-function: cubic-bezier(.21,.77,.35,.91);
+  --transition: .3s var(--timing-function);
+  --transition-primary: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  --transition-colors: color, background-color, border-color, text-decoration-color, fill, stroke;
+
+  --fadeIn: fadeIn .6s var(--timing-function) forwards;
+  --fadeInUp: fadeInUp .6s var(--timing-function) forwards;
+  --fadeInDown: fadeInDown .6s var(--timing-function) forwards;
 }
 
-@media (prefers-color-scheme: github-dark) {
-  :root {
-    --color-primary-100: #E1F1FD;
-    --color-primary-200: #C3E3FA;
-    --color-primary-300: #86C6F4;
-    --color-primary-400: #49A9EF;
-    --color-primary-500: #0C8CE9;
-    --color-primary-600: #0969AF;
-    --color-primary-700: #064675;
-    --color-primary-800: #03233B;
-    --color-primary-900: #02121E;
-    --color-secundary-100: #EFECFF;
-    --color-secundary-200: #DED8FF;
-    --color-secundary-300: #BDB0FF;
-    --color-secundary-400: #9C89FF;
-    --color-secundary-500: #7B61FF;
-    --color-secundary-600: #5D49C0;
-    --color-secundary-700: #3E3180;
-    --color-secundary-800: #1F1940;
-    --color-secundary-900: #100D20;
-    --color-ternay-100: #FFEEF0;
-    --color-ternay-200: #FEDDE0;
-    --color-ternay-300: #FCBAC1;
-    --color-ternay-400: #FB98A2;
-    --color-ternay-500: #F97583;
-    --color-ternay-600: #BB5863;
-    --color-ternay-700: #7D3B42;
-    --color-ternay-800: #3F1E21;
-    --color-ternay-900: #1E1518;
-    --color-quarter-100: #FFF5EE;
-    --color-quarter-200: #FFEADC;
-    --color-quarter-300: #FFD5B8;
-    --color-quarter-400: #FFC094;
-    --color-quarter-500: #FFAB70;
-    --color-quarter-600: #C08154;
-    --color-quarter-700: #805638;
-    --color-quarter-800: #402B1C;
-    --color-quarter-900: #20160E;
-    --color-background-100: #E4E5E5;
-    --color-background-200: #C9CACB;
-    --color-background-300: #929497;
-    --color-background-400: #495057;
-    --color-background-500: #24292E;
-    --color-background-600: #1B1F23;
-    --color-background-700: #121517;
-    --color-background-800: #090B0C;
-    --color-background-900: #050606;
-    --color-white: #ffffff;
-    --color-black: #212529;
-  }
+::-webkit-scrollbar {
+  background-color: var(--color-background-500);
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-background-400);
+  border-radius: var(--rounded-xl);
+}
+
+@media (prefers-color-scheme: github-dark) {}
+
+@keyframes fadeIn {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(1rem); }
+  100% { opacity: 1; transform: translateY(0) }
+}
+
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-1rem) }
+  100% { opacity: 1; transform: translateY(0) }
 }
 
 * {
@@ -140,6 +126,6 @@ body {
 }
 
 main {
-  max-width: var(--screen-xl);
+  max-width: var(--screen-lg);
   margin: 0 auto;
 }

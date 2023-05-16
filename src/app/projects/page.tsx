@@ -1,5 +1,12 @@
+import Hero from '@/components/Hero'
+
 export default function ProjectsPage () {
   return (
-    <div>ProjectsPage</div>
+    <div>
+      <Hero
+        title='Proyectos Bonus'
+        page='projects'
+      />
+    </div>
   )
 }

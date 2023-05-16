@@ -1,5 +1,12 @@
+import Hero from '@/components/Hero'
+
 export default function CategoriesPage () {
   return (
-    <div>CategoriesPage</div>
+    <div>
+      <Hero
+        title='Articulos por Categorías'
+        page='categories'
+      />
+    </div>
   )
 }

@@ -1,24 +1,67 @@
 .hero {
   display: flex;
+  padding: 4rem 0;
+  max-width: 48rem;
+  gap: .25rem;
   flex-direction: column;
   justify-content: center;
+  animation: var(--fadeInUp);
 }
 
-.hello {
+.helloworld {
   font-size: var(--font-size-5xl);
   color: var(--color-primary-500);
+  line-height: var(--font-size-5xl);
+}
+
+.home {
+  background: linear-gradient(275deg, #0C8CE9 65%, #86C6F4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.projects {
+  background: linear-gradient(275deg, #7B61FF 65%, #9C89FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.blog {
+  background: linear-gradient(275deg, #7B61FF 65%, #F97583 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.categories {
+  background: linear-gradient(275deg, #C08154 65%, #FFAB70 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about {
+  background: linear-gradient(275deg, #0969AF 65%, #0C8CE9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .hero h1 {
-  font-size: var(--font-size-6xl);
+  font-size: var(--font-size-7xl);
+  line-height: var(--font-size-7xl);
 }
 
 .subtitle {
   font-size: var(--font-size-5xl);
+  line-height: var(--font-size-5xl);
   color: var(--color-background-400);
 }
 
 .description {
   font-size: var(--font-size-4xl);
   color: var(--color-background-400);
+  max-width: 30rem;
 }

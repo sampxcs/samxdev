@@ -19,6 +19,7 @@ export default function RootLayout ({ children }: { children: React.ReactNode })
         <main>
           {children}
         </main>
+        <div style={{ height: '100vh' }} />
       </body>
     </html>
   )

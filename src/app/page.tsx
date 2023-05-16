@@ -6,7 +6,7 @@ export default function Home () {
       <Hero
         title='Soy Ian Rosales'
         subtitle='Desarrollador Full Stack'
-        description='También escribo sobre IT en mi blog.'
+        description='También escribo sobre el mundo IT en mi blog.'
         page='home'
       />
     </div>
