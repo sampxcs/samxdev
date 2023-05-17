@@ -1,9 +1,13 @@
+import Markdown from 'markdown-to-jsx'
+
 import CardAside from '@/components/Cards/CardAside'
-import Input from '@/components/Forms/Input'
+import Article from '@/components/Sections/Article'
 import Aside from '@/components/Sections/Aside'
 import Blog from '@/components/Sections/Blog'
-import Feed from '@/components/Sections/Feed'
 import Hero from '@/components/Sections/Hero'
+
+import { getPostContent } from '@/utils/getPostContent'
+import { getPostMetadata } from '@/utils/getPostMetadata'
 
 const TRENDING_DATA = [
   {
@@ -69,23 +73,40 @@ const CATEGORIES_DATA = [
 
 ]
 
-export default function BlogPage () {
+export const generateStaticParams = async () => {
+  const posts = getPostMetadata()
+  return posts.map(({ slug }) => ({ slug }))
+}
+
+export const generateMetadata = async ({ params }: any) => {
+  const { data } = getPostContent(params.slug)
+  return {
+    title: data.title,
+    description: data.subtitle
+  }
+}
+
+export default function Page ({ params }: any) {
+  const { slug } = params
+  const { content, data } = getPostContent(slug)
+
   return (
     <div>
       <Hero
-        header='Hola Mundo!'
-        title='Explora mi Blog'
-        page='blog'
+        title={data.title}
+        page='post'
       />
       <Blog>
-        <Feed />
+        <Article>
+          <Markdown>
+            {content}
+          </Markdown>
+        </Article>
         <Aside>
-          <Input type='text' placeholder='Buscar' />
           <CardAside title='Los más vistos' data={TRENDING_DATA} />
           <CardAside title='Top Categorías' data={CATEGORIES_DATA} type='tags' />
         </Aside>
       </Blog>
-      <div style={{ height: '100vh' }}></div>
     </div>
   )
 }

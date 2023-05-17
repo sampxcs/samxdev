@@ -8,14 +8,14 @@
   padding: 4rem 0 6rem;
 }
 
-.helloworld {
+.header {
   color: var(--color-primary-500);
   font-size: var(--font-size-5xl);
   line-height: var(--font-size-5xl);
   animation: gradient 10s ease infinite;
 }
 
-.helloworld[data-page='home'] {
+.header[data-page='home'] {
   background-clip: text;
   background: linear-gradient(-45deg, var(--color-secundary-500), var(--color-primary-500));
   background-size: 200% 200%;
@@ -23,7 +23,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.helloworld[data-page='projects'] {
+.header[data-page='projects'] {
   background-clip: text;
   background: linear-gradient(-45deg, var(--color-secundary-500), var(--color-secundary-400));
   background-size: 200% 200%;
@@ -31,7 +31,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.helloworld[data-page='blog'] {
+.header[data-page='blog'] {
   background-clip: text;
   background: linear-gradient(-45deg, var(--color-secundary-500), var(--color-ternay-500));
   background-size: 200% 200%;
@@ -39,7 +39,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.helloworld[data-page='categories'] {
+.header[data-page='categories'] {
   background-clip: text;
   background: linear-gradient(-45deg, var(--color-ternay-500), var(--color-quarter-500));
   background-size: 200% 200%;
@@ -47,7 +47,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.helloworld[data-page='about'] {
+.header[data-page='about'] {
   background-clip: text;
   background: linear-gradient(-45deg, #0969AF, #0C8CE9);
   background-size: 200% 200%;

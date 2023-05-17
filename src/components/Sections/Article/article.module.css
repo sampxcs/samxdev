@@ -1,0 +1,68 @@
+.article {
+  animation: var(--fadeInUp);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 42rem;
+  font-size: var(--font-size-xl);
+}
+
+.article * {
+  max-width: 100%;
+  white-space: pre-wrap;
+}
+
+.article > div > * {
+  margin-bottom: 1rem;
+}
+
+.article h1 {
+  margin-bottom: 1.5rem;
+}
+
+.article h2 {
+  margin: 1.5rem 0;
+  color: var(--color-ternay-500);
+}
+
+.article p > code {
+  background-color: var(--color-background-700);
+  font-size: var(--font-size-md);
+  padding: .25rem .5rem;
+  border-radius: var(--rounded-sm);
+  font-weight: 600;
+}
+
+.article pre {
+  position: relative;
+  background-color: var(--color-background-800);
+  padding: 1rem;
+  display: block;
+  border-radius: var(--rounded-sm);
+  color: var(--color-primary-300);
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.article pre:hover {
+  border: 1px solid var(--color-background-500);
+  opacity: .9;
+}
+
+.article pre:hover::before {
+  content: url('/icons/copy-regular.svg');
+  color: var(--color-white);
+  position: absolute;
+  right: .5rem;
+  top: .5rem;
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .5rem;
+  aspect-ratio: 1/1;
+  background-color: var(--color-background-700);
+  border-radius: var(--rounded-sm);
+  animation: var(--fadeIn);
+}

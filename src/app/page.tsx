@@ -38,6 +38,7 @@ export default function Home () {
   return (
     <div >
       <Hero
+        header='Hola Mundo!'
         title='Soy Ian Rosales'
         subtitle='Desarrollador Full Stack'
         description='También escribo sobre el mundo IT en mi blog.'
