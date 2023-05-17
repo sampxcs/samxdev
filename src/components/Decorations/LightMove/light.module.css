@@ -11,8 +11,8 @@
   aspect-ratio: 1/1;
   background-color: var(--color-primary-500);
   border-radius: 100%;
-  filter: blur(200px);
-  opacity: 40%;
+  filter: blur(250px);
+  opacity: 25%;
   position: absolute;
   right: 0;
   top: 0;

@@ -1,0 +1,72 @@
+.title {
+  font-size: var(--font-size-2xl);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-background-300);
+  padding: .25rem 0;
+  font-weight: 600;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.list .link {
+  transition: var(--transition);
+  transition-property: var(--transition-colors);
+}
+
+.list .link span {
+  max-width: 90%;
+}
+
+.list .link svg {
+  opacity: 0;
+}
+
+.list .link:hover {
+  color: var(--color-secundary-500);
+}
+
+.list .link:hover svg {
+  animation: var(--fadeInRight);
+}
+
+.tags {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.tags .link {
+  background-color: var(--color-background-400);
+  border-radius: var(--rounded-sm);
+  color: var(--color-white);
+  font-size: var(--font-size-sm);
+  padding: .5rem .75rem;
+  animation: gradient 3s ease infinite;
+}
+
+.tags .link:hover {
+  background: linear-gradient(-45deg, var(--color-secundary-500), var(--color-ternay-500));
+  background-size: 200% 200%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

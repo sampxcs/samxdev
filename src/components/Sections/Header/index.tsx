@@ -1,4 +1,7 @@
+'use client'
+
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import styles from './header.module.css'
 
 import Theme from '@/components/Icons/Theme'
@@ -9,23 +12,29 @@ import ButtonCircle from '@/components/Buttons/ButtonCircle'
 const links = [
   {
     label: 'PROYECTOS',
-    href: '/projects'
+    href: '/projects',
+    color: 'var(--color-secundary-500)'
   },
   {
     label: 'ARTICULOS',
-    href: '/blog'
+    href: '/blog',
+    color: 'var(--color-ternay-500)'
   },
   {
     label: 'CATEGORIAS',
-    href: '/blog/categories'
+    href: '/blog/categories',
+    color: 'var(--color-quarter-500)'
   },
   {
     label: 'SOBRE MI',
-    href: '/about'
+    href: '/about',
+    color: 'var(--color-primary-500)'
   }
 ]
 
 export default function Header () {
+  const pathname = usePathname()
+
   return (
     <header className={styles.header}>
       <Link href='/'>
@@ -33,8 +42,18 @@ export default function Header () {
       </Link>
       <nav className={styles.nav}>
         <ul>
-          {links.map(({ label, href }, index) => (
-            <li key={index}><Link href={href} className={styles.link}>{label}</Link></li>
+          {links.map(({ label, href, color }, index) => (
+            <li key={index}>
+              <Link
+                className={styles.link}
+                data-active={href === pathname}
+                /* @ts-ignore */
+                style={{ '--data-color': `${color}` }}
+                href={href}
+              >
+                {label}
+              </Link>
+            </li>
           ))}
         </ul>
       </nav>

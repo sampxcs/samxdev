@@ -3,7 +3,7 @@ import styles from './feed.module.css'
 
 import ArticlePreview from '@/components/Cards/ArticlePreview'
 
-const articles = [
+const ARTICLES_DATA = [
   {
     id: 1,
     title: 'Enlace de Datos en React',
@@ -53,7 +53,7 @@ export default function Feed () {
     <section className={styles.section}>
       <h2 className={styles.title}>Últimos artículos</h2>
       <ul className={styles.ul}>
-        {articles.map(({ id, title, description, date, tags }) => (
+        {ARTICLES_DATA.map(({ id, title, description, date, tags }) => (
           <li key={id}>
             <Link href={'/'}>
               <ArticlePreview title={title} description={description} date={date} tags={tags}/>

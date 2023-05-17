@@ -12,42 +12,61 @@
   color: var(--color-primary-500);
   font-size: var(--font-size-5xl);
   line-height: var(--font-size-5xl);
+  animation: gradient 10s ease infinite;
 }
 
 .helloworld[data-page='home'] {
   background-clip: text;
-  background: linear-gradient(275deg, #0C8CE9 65%, #86C6F4 100%);
+  background: linear-gradient(-45deg, var(--color-secundary-500), var(--color-primary-500));
+  background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .helloworld[data-page='projects'] {
   background-clip: text;
-  background: linear-gradient(275deg, #7B61FF 65%, #9C89FF 100%);
+  background: linear-gradient(-45deg, var(--color-secundary-500), var(--color-secundary-400));
+  background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .helloworld[data-page='blog'] {
   background-clip: text;
-  background: linear-gradient(275deg, #7B61FF 65%, #F97583 100%);
+  background: linear-gradient(-45deg, var(--color-secundary-500), var(--color-ternay-500));
+  background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .helloworld[data-page='categories'] {
   background-clip: text;
-  background: linear-gradient(275deg, #C08154 65%, #FFAB70 100%);
+  background: linear-gradient(-45deg, var(--color-ternay-500), var(--color-quarter-500));
+  background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .helloworld[data-page='about'] {
   background-clip: text;
-  background: linear-gradient(275deg, #0969AF 65%, #0C8CE9 100%);
+  background: linear-gradient(-45deg, #0969AF, #0C8CE9);
+  background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 .hero h1 {
   font-size: var(--font-size-7xl);

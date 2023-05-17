@@ -8,7 +8,14 @@ export default function LightMove () {
 
   return (
     <div className={styles.container}>
-      <div className={styles.light} style={{ top: `calc(${cords.y / 10}px - 25%)`, right: `-${cords.x / 10}px` }} />
+      <div
+        className={styles.light}
+        style={{
+          top: `calc(${cords.y / 10}px - 25%)`,
+          right: `-${cords.x / 10}px`,
+          filter: `blur(${200 + (cords.x / 20)}px)`
+        }}
+      />
     </div>
   )
 }

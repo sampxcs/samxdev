@@ -2,8 +2,10 @@
   padding: 1.5rem;
   gap: 1.5rem;
   display: flex;
+  flex-direction: column;
   width: 100%;
   border-radius: var(--rounded-md);
+  box-shadow: var(--shadow-md);
 }
 .solid {
   background-color: var(--color-background-500);
