@@ -2,7 +2,7 @@ import styles from './preview.module.css'
 
 import ArrowRight from '@/components/Icons/ArrowRight'
 
-export default function ArticlePreview ({ title, date, description, tags }: any) {
+export default function ArticlePreview ({ title, date, description, tags = ['react', 'node.js'] }: any) {
   return (
     <article className={styles.article}>
       <header>
