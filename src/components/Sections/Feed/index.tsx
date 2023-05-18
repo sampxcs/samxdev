@@ -6,13 +6,13 @@ import { getPostMetadata } from '@/utils/getPostMetadata'
 import ArticlePreview from '@/components/Cards/ArticlePreview'
 
 export default function Feed () {
-  const postsMetadeta = getPostMetadata()
+  const postMetadeta = getPostMetadata()
 
   return (
     <section className={styles.section}>
       <h2 className={styles.title}>Últimos artículos</h2>
       <ul className={styles.ul}>
-        {postsMetadeta.map(({ title, date, subtitle, slug }) => (
+        {postMetadeta.map(({ title, date, subtitle, slug }) => (
           <li key={slug}>
             <Link href={`/blog/posts/${slug}`}>
               <ArticlePreview title={title} date={date} description={subtitle} />

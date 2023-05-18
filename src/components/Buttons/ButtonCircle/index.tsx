@@ -12,7 +12,7 @@ export default function ButtonCircle ({ children, size, onClick, type, tooltip }
   }
 
   return (
-    <Link href='/' className={styles.button} data-tooltip='CAMBIAR TEMA'>
+    <Link href='/' className={styles.button} data-tooltip='Cambiar Tema'>
       {children}
     </Link>
   )

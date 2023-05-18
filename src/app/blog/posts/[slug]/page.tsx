@@ -8,67 +8,38 @@ import Hero from '@/components/Sections/Hero'
 
 import { getPostContent } from '@/utils/getPostContent'
 import { getPostMetadata } from '@/utils/getPostMetadata'
-
-const TRENDING_DATA = [
-  {
-    label: 'Una guía interactiva para las transiciones CSS'
-  },
-  {
-    label: 'Una guía interactiva de Flexbox'
-  },
-  {
-    label: 'El fin del desarrollo front-end'
-  },
-  {
-    label: 'Mi restablecimiento de CSS personalizado'
-  },
-  {
-    label: 'Variables CSS para React Devs'
-  },
-  {
-    label: 'Diseñando Sombras en CSS'
-  },
-  {
-    label: 'Cómo aprender cosas rápidamente'
-  },
-  {
-    label: 'Por qué React Re-Renderiza?'
-  },
-  {
-    label: 'Construyendo un Botón 3D Mágico'
-  }
-]
+import PostContents from '@/components/Cards/PostContents'
 
 const CATEGORIES_DATA = [
   {
-    label: 'React'
+    title: 'React'
   },
   {
-    label: 'Next.js'
+    title: 'Next.js'
   },
   {
-    label: 'Node.js'
+    title: 'Node.js'
   },
   {
-    label: 'CSS'
+    title: 'CSS'
   },
   {
-    label: 'Animaciones'
+    title: 'Animaciones'
   },
   {
-    label: 'JavaScript'
+    title: 'JavaScript'
   },
   {
-    label: 'Python'
+    title: 'Python'
   },
   {
-    label: 'SQL'
+    title: 'SQL'
   },
   {
-    label: 'Git'
+    title: 'Git'
   },
   {
-    label: 'Java'
+    title: 'Java'
   }
 
 ]
@@ -89,12 +60,15 @@ export const generateMetadata = async ({ params }: any) => {
 export default function Page ({ params }: any) {
   const { slug } = params
   const { content, data } = getPostContent(slug)
+  const postMetadata = getPostMetadata()
 
   return (
     <div>
       <Hero
         title={data.title}
         page='post'
+        date={data.date}
+        slug={slug}
       />
       <Blog>
         <Article>
@@ -103,8 +77,9 @@ export default function Page ({ params }: any) {
           </Markdown>
         </Article>
         <Aside>
-          <CardAside title='Los más vistos' data={TRENDING_DATA} />
           <CardAside title='Top Categorías' data={CATEGORIES_DATA} type='tags' />
+          <CardAside title='Los más vistos' data={postMetadata} />
+          <PostContents />
         </Aside>
       </Blog>
     </div>

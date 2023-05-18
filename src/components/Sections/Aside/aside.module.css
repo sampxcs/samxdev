@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 2rem;
   width: 24rem;
+  min-width: 24rem;
 }
 
 .aside :last-child {

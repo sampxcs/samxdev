@@ -4,72 +4,45 @@ import Aside from '@/components/Sections/Aside'
 import Blog from '@/components/Sections/Blog'
 import Feed from '@/components/Sections/Feed'
 import Hero from '@/components/Sections/Hero'
-
-const TRENDING_DATA = [
-  {
-    label: 'Una guía interactiva para las transiciones CSS'
-  },
-  {
-    label: 'Una guía interactiva de Flexbox'
-  },
-  {
-    label: 'El fin del desarrollo front-end'
-  },
-  {
-    label: 'Mi restablecimiento de CSS personalizado'
-  },
-  {
-    label: 'Variables CSS para React Devs'
-  },
-  {
-    label: 'Diseñando Sombras en CSS'
-  },
-  {
-    label: 'Cómo aprender cosas rápidamente'
-  },
-  {
-    label: 'Por qué React Re-Renderiza?'
-  },
-  {
-    label: 'Construyendo un Botón 3D Mágico'
-  }
-]
+import { getPostMetadata } from '@/utils/getPostMetadata'
 
 const CATEGORIES_DATA = [
   {
-    label: 'React'
+    title: 'React'
   },
   {
-    label: 'Next.js'
+    title: 'Next.js'
   },
   {
-    label: 'Node.js'
+    title: 'Node.js'
   },
   {
-    label: 'CSS'
+    title: 'CSS'
   },
   {
-    label: 'Animaciones'
+    title: 'Animaciones'
   },
   {
-    label: 'JavaScript'
+    title: 'JavaScript'
   },
   {
-    label: 'Python'
+    title: 'Python'
   },
   {
-    label: 'SQL'
+    title: 'SQL'
   },
   {
-    label: 'Git'
+    title: 'Git'
   },
   {
-    label: 'Java'
+    title: 'Java'
   }
 
 ]
 
 export default function BlogPage () {
+  const postMetadata = getPostMetadata()
+
   return (
     <div>
       <Hero
@@ -81,7 +54,7 @@ export default function BlogPage () {
         <Feed />
         <Aside>
           <Input type='text' placeholder='Buscar' />
-          <CardAside title='Los más vistos' data={TRENDING_DATA} />
+          <CardAside title='Los más vistos' data={postMetadata} />
           <CardAside title='Top Categorías' data={CATEGORIES_DATA} type='tags' />
         </Aside>
       </Blog>
