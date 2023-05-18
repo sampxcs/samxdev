@@ -35,56 +35,6 @@
   font-weight: 600;
 }
 
-.article pre {
-  position: relative;
-  background-color: var(--color-background-800);
-  padding: 1.5rem;
-  font-size: var(--font-size-md);
-  display: block;
-  border-radius: var(--rounded-sm);
-  color: var(--color-primary-300);
-  border: 1px solid transparent;
-  transition: var(--transition);
-  overflow-x: auto;
-}
-
-.article pre::-webkit-scrollbar {
-  border-radius: var(--rounded-sm);
-  background-color: transparent;
-  height: .5rem;
-}
-
-.article pre::-webkit-scrollbar-thumb {
-  background-color: transparent;
-}
-
-.article pre:hover::-webkit-scrollbar-thumb {
-  background-color: var(--color-background-400);
-}
-
-.article pre:hover {
-  border: 1px solid var(--color-background-500);
-  opacity: .9;
-}
-
-.article pre:hover::before {
-  content: url('/icons/copy-regular.svg');
-  color: var(--color-white);
-  position: absolute;
-  right: .75rem;
-  top: .75rem;
-  width: 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: .5rem;
-  aspect-ratio: 1/1;
-  background-color: var(--color-background-700);
-  border-radius: var(--rounded-sm);
-  animation: var(--fadeIn);
-  cursor: pointer;
-}
-
 .article table {
   background-color: var(--color-background-400);
 }
