@@ -23,6 +23,6 @@ export default function PostContents () {
   }, [slug])
 
   return (
-    <CardAside title='Contenidos principales' theme='light' data={contents}/>
+    <CardAside title='Contenidos del articulo' theme='light' data={contents}/>
   )
 }
