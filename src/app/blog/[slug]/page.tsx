@@ -103,7 +103,6 @@ export default function Page ({ params }: any) {
           <PostContents />
         </Aside>
       </Blog>
-      <div style={{ height: '100vh' }}></div>
     </div>
   )
 }
