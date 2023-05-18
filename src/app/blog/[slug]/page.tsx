@@ -9,6 +9,7 @@ import Hero from '@/components/Sections/Hero'
 import { getPostContent } from '@/utils/getPostContent'
 import { getPostMetadata } from '@/utils/getPostMetadata'
 import PostContents from '@/components/Cards/PostContents'
+import PreCode from '@/components/Elements/PreCode'
 
 const CATEGORIES_DATA = [
   {
@@ -81,7 +82,18 @@ export default function Page ({ params }: any) {
       />
       <Blog>
         <Article>
-          <Markdown>
+          <Markdown
+            options={{
+              overrides: {
+                pre: {
+                  component: PreCode,
+                  props: {
+                    className: 'foo'
+                  }
+                }
+              }
+            }}
+          >
             {content}
           </Markdown>
         </Article>

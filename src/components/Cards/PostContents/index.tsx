@@ -36,7 +36,7 @@ export default function PostContents () {
       const nodeList = document.querySelectorAll('article h2')
       nodeList.forEach((node) => {
         const { y } = node.getBoundingClientRect()
-        if (y < 500) {
+        if (y < 300) {
           setIsActive({
             id: node.id,
             state: true
