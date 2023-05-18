@@ -4,6 +4,8 @@
   flex-direction: column;
   gap: 1.5rem;
   width: 42rem;
+  max-width: 42rem;
+  min-width: 42rem;
 }
 
 .title {

@@ -1,7 +1,7 @@
 ---
 title: "Building a serverless SaaS product"
 subtitle: "A full-stack SaaS project with authentication and payments."
-date: "2021-07-12"
+date: "15 jul 2021"
 ---
 
 # hola mundo!

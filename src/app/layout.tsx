@@ -1,12 +1,12 @@
 import React from 'react'
 
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 import Header from '@/components/Sections/Header'
 import LightMove from '@/components/Decorations/LightMove'
 import ButtonUp from '@/components/Buttons/ButtonUp'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Roboto({ weight: ['300', '400', '500', '700'], subsets: ['latin'] })
 
 export const metadata = {
   title: 'Samxdev',

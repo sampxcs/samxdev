@@ -8,69 +8,49 @@ import Hero from '@/components/Sections/Hero'
 
 import { getPostContent } from '@/utils/getPostContent'
 import { getPostMetadata } from '@/utils/getPostMetadata'
-
-const TRENDING_DATA = [
-  {
-    label: 'Una guía interactiva para las transiciones CSS'
-  },
-  {
-    label: 'Una guía interactiva de Flexbox'
-  },
-  {
-    label: 'El fin del desarrollo front-end'
-  },
-  {
-    label: 'Mi restablecimiento de CSS personalizado'
-  },
-  {
-    label: 'Variables CSS para React Devs'
-  },
-  {
-    label: 'Diseñando Sombras en CSS'
-  },
-  {
-    label: 'Cómo aprender cosas rápidamente'
-  },
-  {
-    label: 'Por qué React Re-Renderiza?'
-  },
-  {
-    label: 'Construyendo un Botón 3D Mágico'
-  }
-]
+import PostContents from '@/components/Cards/PostContents'
 
 const CATEGORIES_DATA = [
   {
-    label: 'React'
+    slug: 'categories/react',
+    title: 'React'
   },
   {
-    label: 'Next.js'
+    slug: 'categories/nextjs',
+    title: 'Next.js'
   },
   {
-    label: 'Node.js'
+    slug: 'categories/nodejs',
+    title: 'Node.js'
   },
   {
-    label: 'CSS'
+    slug: 'categories/css',
+    title: 'CSS'
   },
   {
-    label: 'Animaciones'
+    slug: 'categories/animations',
+    title: 'Animaciones'
   },
   {
-    label: 'JavaScript'
+    slug: 'categories/javascript',
+    title: 'JavaScript'
   },
   {
-    label: 'Python'
+    slug: 'categories/python',
+    title: 'Python'
   },
   {
-    label: 'SQL'
+    slug: 'categories/sql',
+    title: 'SQL'
   },
   {
-    label: 'Git'
+    slug: 'categories/git',
+    title: 'Git'
   },
   {
-    label: 'Java'
+    slug: 'categories/java',
+    title: 'Java'
   }
-
 ]
 
 export const generateStaticParams = async () => {
@@ -89,12 +69,15 @@ export const generateMetadata = async ({ params }: any) => {
 export default function Page ({ params }: any) {
   const { slug } = params
   const { content, data } = getPostContent(slug)
+  const postMetadata = getPostMetadata()
 
   return (
     <div>
       <Hero
         title={data.title}
         page='post'
+        date={data.date}
+        slug={slug}
       />
       <Blog>
         <Article>
@@ -103,10 +86,12 @@ export default function Page ({ params }: any) {
           </Markdown>
         </Article>
         <Aside>
-          <CardAside title='Los más vistos' data={TRENDING_DATA} />
           <CardAside title='Top Categorías' data={CATEGORIES_DATA} type='tags' />
+          <CardAside title='Los más vistos' data={postMetadata} />
+          <PostContents />
         </Aside>
       </Blog>
+      <div style={{ height: '100vh' }}></div>
     </div>
   )
 }

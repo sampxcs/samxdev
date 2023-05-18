@@ -5,9 +5,9 @@
   flex-direction: column;
   width: 100%;
   border-radius: var(--rounded-md);
-  box-shadow: var(--shadow-md);
 }
 .solid {
   background-color: var(--color-background-500);
   border: 1px solid var(--color-background-400);
+  box-shadow: var(--shadow-md);
 }
