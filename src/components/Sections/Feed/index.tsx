@@ -14,7 +14,7 @@ export default function Feed () {
       <ul className={styles.ul}>
         {postMetadeta.map(({ title, date, subtitle, slug }) => (
           <li key={slug}>
-            <Link href={`/blog/posts/${slug}`}>
+            <Link href={`/blog/${slug}`}>
               <ArticlePreview title={title} date={date} description={subtitle} />
             </Link>
           </li>

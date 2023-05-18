@@ -12,36 +12,45 @@ import PostContents from '@/components/Cards/PostContents'
 
 const CATEGORIES_DATA = [
   {
+    slug: 'categories/react',
     title: 'React'
   },
   {
+    slug: 'categories/nextjs',
     title: 'Next.js'
   },
   {
+    slug: 'categories/nodejs',
     title: 'Node.js'
   },
   {
+    slug: 'categories/css',
     title: 'CSS'
   },
   {
+    slug: 'categories/animations',
     title: 'Animaciones'
   },
   {
+    slug: 'categories/javascript',
     title: 'JavaScript'
   },
   {
+    slug: 'categories/python',
     title: 'Python'
   },
   {
+    slug: 'categories/sql',
     title: 'SQL'
   },
   {
+    slug: 'categories/git',
     title: 'Git'
   },
   {
+    slug: 'categories/java',
     title: 'Java'
   }
-
 ]
 
 export const generateStaticParams = async () => {
@@ -82,6 +91,7 @@ export default function Page ({ params }: any) {
           <PostContents />
         </Aside>
       </Blog>
+      <div style={{ height: '100vh' }}></div>
     </div>
   )
 }

@@ -1,0 +1,77 @@
+.title {
+  font-size: var(--font-size-2xl);
+}
+
+.list {
+  list-style: none;
+}
+
+.list li {
+  position: relative;
+  margin: 0;
+  padding-left: 1.75rem;
+}
+
+.list li::before {
+  aspect-ratio: 1/1;
+  background-color: var(--color-background-600);
+  border-radius: 50%;
+  border: 2px solid var(--color-background-300);
+  content: '';
+  left: 0;
+  position: absolute;
+  top: .7rem;
+  transition: var(--transition);
+  width: .5rem;
+  z-index: 1;
+}
+
+.list li:after {
+  background-color: var(--color-background-300);
+  bottom: 0;
+  content: '';
+  left: 5px;
+  position: absolute;
+  top: 0rem;
+  transition: var(--transition);
+  width: 2px;
+}
+
+.list li:hover::after,
+.list li:hover::before,
+.list li[data-active = true]::after,
+.list li[data-active = true]::before  {
+  background-color: var(--color-secundary-500);
+  border-color: var(--color-secundary-500);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-background-300);
+  padding: .25rem 0;
+  font-weight: 600;
+}
+
+.list .link {
+  transition: var(--transition);
+  transition-property: var(--transition-colors);
+}
+
+.list .link span {
+  max-width: 90%;
+}
+
+.list .link svg {
+  opacity: 0;
+}
+
+.list li:hover .link,
+.list li[data-active = true] .link {
+  color: var(--color-secundary-500);
+}
+
+.list li:hover .link svg {
+  animation: var(--fadeInRight);
+}

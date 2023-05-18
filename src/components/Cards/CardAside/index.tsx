@@ -11,7 +11,7 @@ export default function CardAside ({ title, data, type = 'list', theme }: any) {
       <ul className={styles[type]}>
         {data.map(({ title, slug }: any) => (
           <li key={title}>
-            <Link href={`/blog/posts/${slug}`} className={styles.link}>
+            <Link href={`/blog/${slug}`} className={styles.link}>
               <span>{ type === 'tags' && '#' }{title}</span>
               {type === 'list' && <ArrowRight width='1.5rem' />}
             </Link>

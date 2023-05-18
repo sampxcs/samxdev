@@ -8,36 +8,45 @@ import { getPostMetadata } from '@/utils/getPostMetadata'
 
 const CATEGORIES_DATA = [
   {
+    slug: 'categories/react',
     title: 'React'
   },
   {
+    slug: 'categories/nextjs',
     title: 'Next.js'
   },
   {
+    slug: 'categories/nodejs',
     title: 'Node.js'
   },
   {
+    slug: 'categories/css',
     title: 'CSS'
   },
   {
+    slug: 'categories/animations',
     title: 'Animaciones'
   },
   {
+    slug: 'categories/javascript',
     title: 'JavaScript'
   },
   {
+    slug: 'categories/python',
     title: 'Python'
   },
   {
+    slug: 'categories/sql',
     title: 'SQL'
   },
   {
+    slug: 'categories/git',
     title: 'Git'
   },
   {
+    slug: 'categories/java',
     title: 'Java'
   }
-
 ]
 
 export default function BlogPage () {

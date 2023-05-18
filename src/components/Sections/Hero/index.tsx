@@ -2,7 +2,7 @@ import Link from 'next/link'
 import styles from './hero.module.css'
 import GitHub from '@/components/Icons/GitHub'
 
-export default function Hero ({ header, title, subtitle, description, page, date, slug }: { header?: string, title: string, subtitle?: string, description?: string, page?: string, date?: string, slug?: string }) {
+export default function Hero ({ header, title, subtitle, page, date, slug }: { header?: string, title: string, subtitle?: string, page?: string, date?: string, slug?: string }) {
   if (page === 'post') {
     return (
     <section className={styles.hero}>
@@ -27,7 +27,6 @@ export default function Hero ({ header, title, subtitle, description, page, date
       {header && <h2 className={styles.header} data-page={page}>{header}</h2>}
       <h1>{title}</h1>
       {subtitle && <h2 className={styles.subtitle}>{subtitle}</h2>}
-      {description && <h3 className={styles.description}>{description}</h3>}
     </section>
   )
 }
