@@ -2,6 +2,7 @@
 title: "Building a serverless SaaS product"
 subtitle: "A full-stack SaaS project with authentication and payments."
 date: "15 jul 2021"
+tag: "SaaS"
 ---
 
 # hola mundo!

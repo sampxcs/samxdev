@@ -8,12 +8,13 @@ export const getPostMetadata = () => {
   const posts = markdownPosts.map((fileName) => {
     const fileContent = fs.readFileSync(`src/posts/${fileName}.md`, 'utf-8')
     const matterResult = matter(fileContent)
-    const { title, date, subtitle } = matterResult.data
+    const { title, date, subtitle, tag } = matterResult.data
     return {
       title,
       date,
       subtitle,
-      slug: fileName
+      slug: fileName,
+      tag
     }
   })
 

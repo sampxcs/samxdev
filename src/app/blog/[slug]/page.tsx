@@ -11,49 +11,6 @@ import { getPostMetadata } from '@/utils/getPostMetadata'
 import PostContents from '@/components/Cards/PostContents'
 import PreCode from '@/components/Elements/PreCode'
 
-const CATEGORIES_DATA = [
-  {
-    slug: 'categories/react',
-    title: 'React'
-  },
-  {
-    slug: 'categories/nextjs',
-    title: 'Next.js'
-  },
-  {
-    slug: 'categories/nodejs',
-    title: 'Node.js'
-  },
-  {
-    slug: 'categories/css',
-    title: 'CSS'
-  },
-  {
-    slug: 'categories/animations',
-    title: 'Animaciones'
-  },
-  {
-    slug: 'categories/javascript',
-    title: 'JavaScript'
-  },
-  {
-    slug: 'categories/python',
-    title: 'Python'
-  },
-  {
-    slug: 'categories/sql',
-    title: 'SQL'
-  },
-  {
-    slug: 'categories/git',
-    title: 'Git'
-  },
-  {
-    slug: 'categories/java',
-    title: 'Java'
-  }
-]
-
 export const generateStaticParams = async () => {
   const posts = getPostMetadata()
   return posts.map(({ slug }) => ({ slug }))
@@ -98,7 +55,7 @@ export default function Page ({ params }: any) {
           </Markdown>
         </Article>
         <Aside>
-          <CardAside title='Top Categorías' data={CATEGORIES_DATA} type='tags' />
+          <CardAside title='Top Categorías' data={postMetadata} type='tags' />
           <CardAside title='Los más vistos' data={postMetadata} />
           <PostContents />
         </Aside>

@@ -2,7 +2,7 @@ import styles from './preview.module.css'
 
 import ArrowRight from '@/components/Icons/ArrowRight'
 
-export default function ArticlePreview ({ title, date, description, tags = ['react', 'node.js'] }: any) {
+export default function ArticlePreview ({ title, date, description, tag }: any) {
   return (
     <article className={styles.article}>
       <header>
@@ -11,9 +11,7 @@ export default function ArticlePreview ({ title, date, description, tags = ['rea
       </header>
       <p>{description}</p>
       <ul className={styles.tags}>
-        {tags.map((tag: string) => (
-          <div key={tag} className={styles.tag}>#{tag}</div>
-        ))}
+        <div className={styles.tag}>#{tag}</div> {/* agregar mas tags */}
       </ul>
       <small className={styles.small}>Leer más <ArrowRight width='.75rem' className={styles.arrow}/></small>
     </article>
