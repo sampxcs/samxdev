@@ -1,0 +1,15 @@
+.button {
+  align-items: center;
+  background-color: var(--color-primary-500);
+  color: var(--color-white);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  border: none;
+  padding: .5rem 1rem;
+  border-radius: var(--rounded-sm);
+}
+
+.button[data-size='lg'] {
+  width: 3rem;
+}

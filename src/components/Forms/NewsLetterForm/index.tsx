@@ -1,6 +1,8 @@
 import React from 'react'
 import Input from '@/components/Forms/Input'
 import styles from './form.module.css'
+import ButtonPrimary from '@/components/Buttons/ButtonPrimary'
+import ButtonSecundary from '@/components/Buttons/ButtonSecundary'
 
 export default function NewsLetterForm () {
   return (
@@ -10,8 +12,8 @@ export default function NewsLetterForm () {
       <span>Sin spam, cancela tu suscripción en cualquier momento.</span>
       <Input placeholder='Ingresa tu email...' style='light'/>
       <div className={styles.buttons}>
-        <button>Cancelar</button>
-        <button>Suscribirse</button>
+        <ButtonSecundary>Cancelar</ButtonSecundary>
+        <ButtonPrimary>Suscribirse</ButtonPrimary>
       </div>
     </form>
   )

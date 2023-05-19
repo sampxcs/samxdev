@@ -1,12 +1,14 @@
 .container {
-  display: none;
   position: fixed;
   bottom: 2rem;
   right: 2rem;
   color: var(--color-white);
-  animation: var(--fadeInUp);
 }
 
 .container[data-visible = true] {
-  display: block;
+  animation: var(--fadeInUp);
+}
+
+.container[data-visible = false] {
+  animation: var(--fadeOutDown);
 }

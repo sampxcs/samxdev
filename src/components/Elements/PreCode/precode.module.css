@@ -60,7 +60,7 @@
   background-color: var(--color-background-600);
   color: var(--color-background-400);
   cursor: pointer;
-  border: none;
+  border: 1px solid var(--color-background-400);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,6 +77,12 @@
 .after button:hover {
   background-color: var(--color-background-500);
   color: var(--color-background-300);
+}
+
+.after button[data-tooltip = 'Copiado'] {
+  background-color: var(--color-background-500);
+  border-color: var(--color-green);
+  color: var(--color-green);
 }
 
 .lenguage {
