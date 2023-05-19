@@ -67,7 +67,6 @@ export default function BlogPage () {
           <CardAside title='Top Categorías' data={CATEGORIES_DATA} type='tags' />
         </Aside>
       </Blog>
-      <div style={{ height: '100vh' }}></div>
     </div>
   )
 }

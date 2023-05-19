@@ -5,6 +5,8 @@ import { Roboto } from 'next/font/google'
 import Header from '@/components/Sections/Header'
 import LightMove from '@/components/Decorations/LightMove'
 import ButtonUp from '@/components/Buttons/ButtonUp'
+import Footer from '@/components/Sections/Footer'
+import NewsLetterForm from '@/components/Forms/NewsLetterForm'
 
 const inter = Roboto({ weight: ['300', '400', '500', '700'], subsets: ['latin'] })
 
@@ -20,7 +22,9 @@ export default function RootLayout ({ children }: { children: React.ReactNode })
         <Header />
         <main>
           {children}
+          <NewsLetterForm />
         </main>
+        <Footer />
         <ButtonUp />
         <LightMove />
       </body>

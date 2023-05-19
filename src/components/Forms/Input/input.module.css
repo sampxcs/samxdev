@@ -7,3 +7,11 @@
   outline: none;
   color: var(--color-white);
 }
+
+.input[data-style = 'light'] {
+  background-color: var(--color-background-400);
+}
+
+.input[data-style = 'light']::placeholder {
+  color: var(--color-background-200);
+}

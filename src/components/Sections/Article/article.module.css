@@ -28,7 +28,7 @@
 }
 
 .article p > code {
-  background-color: var(--color-background-700);
+  background-color: var(--color-background-500);
   font-size: var(--font-size-md);
   padding: .25rem .5rem;
   border-radius: var(--rounded-sm);
@@ -36,18 +36,33 @@
 }
 
 .article table {
-  background-color: var(--color-background-400);
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: var(--shadow-sm);
+  border-radius: var(--rounded-sm);
+  overflow: hidden;
 }
 
-.article table th {
-  text-align: center;
-  background-color: var(--color-background-600);
-  padding: .5rem;
+.article table thead tr {
+  background-color: var(--color-ternay-500);
+  color: #ffffff;
+  text-align: left;
 }
 
+.article table th,
 .article table td {
-  padding: .5rem;
-  background-color: var(--color-background-600);
+  padding: 12px 15px;
+}
+
+.article table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.article table tbody tr:last-of-type {
+  border-bottom: 2px solid var(--color-ternay-500);
 }
 
 .article a {

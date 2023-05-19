@@ -23,7 +23,6 @@ export default function Home () {
           <CardAside title='Los más vistos' data={postMetadata} />
         </Aside>
       </Blog>
-      <div style={{ height: '100vh' }}></div>
     </div>
   )
 }

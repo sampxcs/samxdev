@@ -2,12 +2,13 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-background-800);
+  background-color: var(--color-background-700);
   font-size: var(--font-size-md);
   border-radius: var(--rounded-sm);
   border: 1px solid transparent;
   transition: var(--transition);
   margin: 4rem 0;
+  box-shadow: var(--shadow-sm);
 }
 
 .precode:hover {
@@ -38,6 +39,7 @@
 .precode pre code {
   background: none!important;
   text-shadow: none!important;
+  filter: contrast(1.5);
 }
 
 .after {
@@ -82,13 +84,15 @@
   transition: var(--transition);
   left: -1px;
   top: -1.75rem;
-  background-color: var(--color-background-800);
+  background-color: var(--color-background-700);
   padding: .25rem .75rem;
   border-radius: var(--rounded-sm);
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   z-index: 1;
   border: 1px solid transparent;
+  font-weight: 600;
+  color: var(--color-background-300);
 }
 
 .precode:hover .lenguage {
