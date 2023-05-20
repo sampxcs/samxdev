@@ -14,7 +14,7 @@ export default function CardAside ({ title, data, type = 'list', theme }: any) {
       <ul className={styles.tags}>
         {/* @ts-ignore */}
         {[...setTags].map((tag: any) => (
-          <li key={title}>
+          <li key={tag}>
             <Link href={`/blog/categories/${tag}`} className={styles.link}>
               <span>#{tag}</span>
             </Link>

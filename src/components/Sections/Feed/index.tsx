@@ -12,7 +12,7 @@ export default function Feed ({ filter }: any) {
 
   return (
     <section className={styles.section}>
-      <h2 className={styles.title}>{filter ? `${filter}: ${data.length} Articulo` : 'Últimos artículos'}</h2>
+      <h2 className={styles.title}>{filter ? `Articulos con la categoria "${filter}": ${data.length}` : 'Últimos artículos'}</h2>
       <ul className={styles.ul}>
         {data.map(({ title, date, subtitle, slug, tag }) => (
           <li key={slug}>
