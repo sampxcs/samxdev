@@ -18,3 +18,31 @@
   gap: 1rem;
   list-style: none;
 }
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.link a {
+  align-items: center;
+  display: flex;
+  gap: .5rem;
+  width: 10rem;
+  font-weight: 600;
+}
+
+.arrow {
+  animation: var(--fadeInRight);
+  color: var(--color-secundary-500);
+  display: none;
+}
+
+.link a:hover {
+  color: var(--color-secundary-500);
+}
+
+.link a:hover .arrow {
+  display: block;
+}

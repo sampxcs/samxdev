@@ -2,7 +2,16 @@
 title: "Using AI to generate poetry"
 subtitle: "I used GPT-3 to generate poetry and other creative content."
 date: "27 jun 2022"
-tag: "Inteligencia-Artificial"
+tags: [
+  {
+    title: "Inteligencia Artificial",
+    description: "La Inteligencia Artificial (IA) es la combinación de algoritmos planteados con el propósito de crear máquinas que presenten las mismas capacidades que el ser humano. Una tecnología que todavía nos resulta lejana y misteriosa, pero que desde hace unos años está presente en nuestro día a día a todas horas."
+  },
+  {
+    title: "GPT-3",
+    description: "Generative Pre-trained Transformer 3, conocida por sus siglas, es un modelo de lenguaje autorregresivo que emplea aprendizaje profundo para producir textos que simulan la redacción humana."
+  },
+]
 ---
 
 I was recently granted access to the [OpenAI GPT-3 Beta](https://beta.openai.com/), a very powerful language model that can be used to do all sorts of magic like chat bot generation, article summary, and a [lot more cool stuff](https://beta.openai.com/examples).

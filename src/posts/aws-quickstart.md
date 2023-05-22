@@ -2,7 +2,16 @@
 title: "Getting Started with AWS"
 subtitle: "Create an AWS account and set up CLI/SDK access."
 date: "27 jun 2022"
-tag: "AWS"
+tags: [
+  {
+    title: "AWS",
+    description: "Amazon Web Services es una colección de servicios de computación en la nube pública que en conjunto forman una plataforma de computación en la nube, ofrecidas a través de Internet por Amazon.com. Es usado en aplicaciones populares como Dropbox, Foursquare, HootSuite."
+  }, 
+  {
+    title: "CLI",
+    description: "Una interfaz de línea de comandos (CLI) es una interfaz de usuario (UI) basada en texto que se utiliza para ver y administrar archivos de computadora."
+  }
+]
 ---
 
 "Cloud computing" plays a vital role in the creation of software products and services. It's also one of the most highly sought-after skills in the tech industry.

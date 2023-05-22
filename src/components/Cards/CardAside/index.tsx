@@ -6,14 +6,14 @@ import ArrowRight from '@/components/Icons/ArrowRight'
 
 export default function CardAside ({ title, data, type = 'list', theme }: any) {
   if (type === 'tags') {
-    const setTags = new Set(data.map(({ tag }: any) => tag))
+    const dataTags = data.map(({ tags }: any) => tags)
+    const tags = Array.from(new Set(dataTags.flat().map((tag: any) => tag.title)))
 
     return (
     <Card theme={theme} >
       <h2 className={styles.title}>{title}</h2>
       <ul className={styles.tags}>
-        {/* @ts-ignore */}
-        {[...setTags].map((tag: any) => (
+        {tags.slice(0, 10).map((tag: any) => (
           <li key={tag}>
             <Link href={`/blog/categories/${tag}`} className={styles.link}>
               <span>#{tag}</span>

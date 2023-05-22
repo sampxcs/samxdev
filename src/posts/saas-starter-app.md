@@ -2,7 +2,10 @@
 title: "Building a serverless SaaS product"
 subtitle: "A full-stack SaaS project with authentication and payments."
 date: "15 jul 2021"
-tag: "SaaS"
+tags: [{
+  title: "AWS",
+  description: "Amazon Web Services es una colección de servicios de computación en la nube pública que en conjunto forman una plataforma de computación en la nube, ofrecidas a través de Internet por Amazon.com. Es usado en aplicaciones populares como Dropbox, Foursquare, HootSuite."
+}]
 ---
 
 # hola mundo!

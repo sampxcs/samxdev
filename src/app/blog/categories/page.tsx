@@ -1,7 +1,10 @@
+import Blog from '@/components/Sections/Blog'
+import Categories from '@/components/Sections/Categories'
+
 export default function CategoriesPage () {
   return (
-    <div style={{ width: '41.75rem' }}>
-      Categorias
-    </div>
+    <Blog>
+      <Categories />
+    </Blog>
   )
 }

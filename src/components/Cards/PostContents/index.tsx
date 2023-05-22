@@ -18,7 +18,6 @@ export default function PostContents () {
   useEffect(() => {
     const nodeList = document.querySelectorAll('article h2')
     const contentData: any = []
-    console.log('exec')
 
     nodeList.forEach((node) => {
       contentData.push({
