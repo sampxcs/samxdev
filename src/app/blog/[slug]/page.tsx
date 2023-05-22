@@ -38,7 +38,7 @@ export default function Page ({ params }: any) {
         slug={slug}
       />
       <Blog>
-        <Article>
+        <Article tags={data.tags}>
           <Markdown
             options={{
               overrides: {

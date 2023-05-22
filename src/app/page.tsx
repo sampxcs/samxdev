@@ -18,7 +18,7 @@ export default function Home () {
         page='home'
       />
       <Blog>
-        <Feed />
+        <Feed limit={4} link/>
         <Aside>
           <CardAside title='Los más vistos' data={postMetadata} />
         </Aside>

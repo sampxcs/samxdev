@@ -2,7 +2,10 @@
 title: "Wolfhunter: A PICO-8 RPG"
 subtitle: "Implementing Pokemon-like combat mechanics in PICO-8."
 date: "18 mar 2021"
-tag: "PICO-8"
+tags: [{
+  title: "AWS",
+  description: "Amazon Web Services es una colección de servicios de computación en la nube pública que en conjunto forman una plataforma de computación en la nube, ofrecidas a través de Internet por Amazon.com. Es usado en aplicaciones populares como Dropbox, Foursquare, HootSuite."
+}]
 ---
 
 In a [previous post](./retro-games-with-pico-8) I talked about how making retro 8-bit games is a great way for fledgling developers to learn new things whilst expanding their portfolio.

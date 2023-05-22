@@ -73,3 +73,25 @@
 .article ul {
   padding-left: 2rem;
 }
+
+.article .tags {
+  display: flex;
+  font-size: var(--font-size-xs);
+  gap: .5rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.article .tag {
+  background-color: var(--color-background-500);
+  border-radius: var(--rounded-sm);
+  padding: .5rem .75rem;
+  transition-property: var(--transition-colors);
+  transition: var(--transition);
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.article .tag:hover {
+  background-color: var(--color-secundary-500);
+}
