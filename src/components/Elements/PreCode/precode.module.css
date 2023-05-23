@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-background-700);
+  background-color: var(--color-background-600);
   font-size: var(--font-size-md);
   border-radius: var(--rounded-sm);
   border: 1px solid transparent;
@@ -12,7 +12,7 @@
 }
 
 .precode:hover {
-  border: 1px solid var(--color-background-500);
+  border: 1px solid var(--color-background-40);
   opacity: .9;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .precode:hover pre::-webkit-scrollbar-thumb {
-  background-color: var(--color-background-400);
+  background-color: var(--color-background-40);
 }
 
 .precode pre code {
@@ -90,7 +90,7 @@
   transition: var(--transition);
   left: -1px;
   top: -1.75rem;
-  background-color: var(--color-background-700);
+  background-color: var(--color-background-600);
   padding: .25rem .75rem;
   border-radius: var(--rounded-sm);
   border-bottom-left-radius: 0;
@@ -102,6 +102,6 @@
 }
 
 .precode:hover .lenguage {
-  border-top: 1px solid var(--color-background-500);
-  border-left: 1px solid var(--color-background-500);
+  border-top: 1px solid var(--color-background-40);
+  border-left: 1px solid var(--color-background-40);
 }

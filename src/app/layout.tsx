@@ -22,8 +22,8 @@ export default function RootLayout ({ children }: { children: React.ReactNode })
         <Header />
         <main>
           {children}
-          <NewsLetterForm />
         </main>
+        <NewsLetterForm />
         <Footer />
         <ButtonUp />
         <LightMove />

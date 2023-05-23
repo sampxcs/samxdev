@@ -83,7 +83,7 @@
 }
 
 .article .tag {
-  background-color: var(--color-background-500);
+  background-color: var(--color-background-600);
   border-radius: var(--rounded-sm);
   padding: .5rem .75rem;
   transition-property: var(--transition-colors);
