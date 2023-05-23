@@ -1,15 +1,12 @@
 .footer {
   align-items: center;
-  background-color: var(--color-background-600);
+  background-color: var(--color-background-800);
   display: flex;
   flex-direction: column;
   font-size: 1rem;
-  font-weight: 600;
   gap: 4rem;
   justify-content: center;
-  margin-top: 4rem;
   padding: 1.5rem;
-  border-top: 1px solid var(--color-background-500);
 }
 
 .content {
@@ -17,7 +14,7 @@
   gap: 1rem;
   justify-content: space-between;
   max-width: var(--screen-lg);
-  padding: 0 1rem;
+  padding: 2rem 1rem;
 }
 
 .section {

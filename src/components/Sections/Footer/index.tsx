@@ -57,10 +57,10 @@ export default function Footer () {
             GRACIAS POR LEER! <br/>
           </h4>
           <p>
-            ¿TIENES UN PROYECTO EMOCIONANTE EN EL QUE NECESITES AYUDA?, SIGUEME EN MIS REDES SOCIALES Y NO DUDES EN CONTACTARME PARA CHARLAR.
+            ¿Tienes un proyecto emocionante en el que necesites ayuda?, sigueme en mis redes sociales y no dudes en contactarme para charlar.
           </p>
           <p>
-            ESCRIBEME AL <span className={styles.email}>IANROSALES634@GMAIL.COM</span>
+            Escribeme a <span className={styles.email}>ianrosales634@gmail.com</span>
           </p>
         </div>
         <div className={styles.section}>
@@ -68,7 +68,7 @@ export default function Footer () {
           <div className={styles.categories}>
             {
               CATEGORIES_DATA.map(({ title, slug }) => (
-                <Link className={styles.link} href={slug} key={slug}>{title.toLocaleUpperCase()}</Link>
+                <Link className={styles.link} href={slug} key={slug}>{title}</Link>
               ))
             }
           </div>
@@ -76,10 +76,10 @@ export default function Footer () {
         <div className={styles.section}>
           <h4 className={styles.title}>REDES SOCIALES</h4>
             <ul className={styles.section}>
-              <li><Link className={styles.link} target='_blank' href='https://github.com/sampxcs'><GitHub width='1rem' /> GITHUB</Link></li>
-              <li><Link className={styles.link} target='_blank' href='https://www.linkedin.com/in/ian-samuel-rosales-leon-38a5b3230'><LinkedIn width='1rem' /> LINKEDIN</Link></li>
-              <li><Link className={styles.link} target='_blank' href='https://twitter.com/samxdev'><Twitter width='1rem' /> TWITTER</Link></li>
-              <li><Link className={styles.link} target='_blank' href='https://www.instagram.com/iansrlx'><Instagram width='1rem' /> INSTAGRAM</Link></li>
+              <li><Link className={styles.link} target='_blank' href='https://github.com/sampxcs'><GitHub width='1rem' />GitHub</Link></li>
+              <li><Link className={styles.link} target='_blank' href='https://www.linkedin.com/in/ian-samuel-rosales-leon-38a5b3230'><LinkedIn width='1rem' />LinkedIn</Link></li>
+              <li><Link className={styles.link} target='_blank' href='https://twitter.com/samxdev'><Twitter width='1rem' />Twitter</Link></li>
+              <li><Link className={styles.link} target='_blank' href='https://www.instagram.com/iansrlx'><Instagram width='1rem' />Instagram</Link></li>
             </ul>
         </div>
       </div>
