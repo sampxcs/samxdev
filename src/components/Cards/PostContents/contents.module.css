@@ -14,7 +14,7 @@
 
 .list li::before {
   aspect-ratio: 1/1;
-  background-color: var(--color-background-600);
+  background-color: var(--color-background-700);
   border-radius: 50%;
   border: 2px solid var(--color-background-300);
   content: '';

@@ -22,6 +22,7 @@
 .tag h3 {
   font-size: var(--font-size-3xl);
   font-weight: 700;
+  letter-spacing: -0.05rem;
 }
 
 .tag p {
@@ -44,10 +45,6 @@
 
 .tag:hover {
   border-color: var(--color-secundary-700);
-  color: var(--color-secundary-500);
-}
-
-.tag:hover p {
   color: var(--color-secundary-500);
 }
 
