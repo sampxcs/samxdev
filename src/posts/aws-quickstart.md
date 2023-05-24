@@ -4,12 +4,16 @@ subtitle: "Create an AWS account and set up CLI/SDK access."
 date: "27 jun 2022"
 tags: [
   {
-    title: "AWS",
-    description: "Amazon Web Services es una colección de servicios de computación en la nube pública que en conjunto forman una plataforma de computación en la nube, ofrecidas a través de Internet por Amazon.com. Es usado en aplicaciones populares como Dropbox, Foursquare, HootSuite."
+    title: "HTML",
+    description: "Siglas en inglés de HyperText Markup Language, hace referencia al lenguaje de marcado para la elaboración de páginas web."
   }, 
   {
-    title: "CLI",
-    description: "Una interfaz de línea de comandos (CLI) es una interfaz de usuario (UI) basada en texto que se utiliza para ver y administrar archivos de computadora."
+    title: "CSS",
+    description: "En español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado."
+  }, 
+  {
+    title: "JavaScript",
+    description: "Lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico."
   }
 ]
 ---
@@ -26,13 +30,13 @@ Es una practica comun añadirle estilos a nuestros componente directamente en Ja
 
 ### Sistaxis
 
-```CSS
+```css
 attr( attribute-name <type-or-unit>? [, <fallback> ]? )
 ```
 
 ### Ejemplos
 
-```CSS
+```css
 /* Simple usage */
 attr(data-count);
 attr(title);
@@ -55,7 +59,7 @@ La funcion `attr()` permite acceder a los atributos de tus tags HTML directament
 
 En este ejemplo creamos el atributo `data-content`, (tienes que agregarle siempre el prefijo `data-` para que lo tome correctamente), en el HTML, y le asignamos el valor que querramos usar dentro de CSS, en este caso el string 'before content'.
 
-```HTML
+```html
 <div class='element' data-content='before content'>
   Childrens 
 </div>
@@ -63,7 +67,7 @@ En este ejemplo creamos el atributo `data-content`, (tienes que agregarle siempr
 
 Luego en CSS podemos acceder al valor de este atributo usando la funcion `attr( <atribute-name> )`.
 
-```CSS
+```css
 .element::before {
   content: attr( data-content )
 }
@@ -77,7 +81,7 @@ Luego en CSS podemos acceder al valor de este atributo usando la funcion `attr( 
 
 Tenemos un botton (o cualquier otro elemento HTML) y le agregamos el atributo `data-tooltip` con el mensaje que queremos que tenga el Tooltip.
 
-```HTML
+```html
 <button data-tooltip='Hello World!'>
   Hover me
 </button>
@@ -85,7 +89,7 @@ Tenemos un botton (o cualquier otro elemento HTML) y le agregamos el atributo `d
 
 En CSS seleccionamos todos los elementos con el atributo `data-tooltip` declarado y creamos el pseudo elemento.
 
-```CSS
+```css
 *[data-tooltip] {
   position: relative;
 }
@@ -119,7 +123,7 @@ Imagina que tenemos una lista de Superheroes y queremos asignarle a cada uno un 
 
 Teniendo un array con los datos de nuestros Superheroes donde declaramos su nombre y le asignamos un color:
   
-```JS
+```javascript
 const heroes = [
   {
     name: 'Batman',
@@ -138,14 +142,14 @@ const heroes = [
 
 En HTML tenemos un ul con el id = 'list'
   
-```HTML
+```html
 <ul id='list'>
 </ul>
 ```  
 
 Podemos iterar este array y pasarle el color que le corresponda a cada uno mediante un atributo personalizado `data-color`
   
-```JS
+```javascript
 // Funcion para insertar la data
 function renderHeroes(heroes) {
   // iteramos el array de heroes y renderizamos un elemento <li> por cada heroe con sus datos
@@ -162,7 +166,7 @@ list.innerHTML = renderHeroes(heroes) // Renderizamos los <li> dentro de la list
 ```
 Por ultimo en CSS seleccionamos los elementos `<li>` y les agregamos el color que corresponda:
   
-```CSS
+```css
 #list li {
   background: attr(data-color color);
 }
