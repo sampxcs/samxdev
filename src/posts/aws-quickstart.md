@@ -1,7 +1,7 @@
 ---
-title: "Accede a datos y variables de JS desde CSS nativo"
-subtitle: "Create an AWS account and set up CLI/SDK access."
-date: "27 jun 2022"
+title: "Accede a variables de JS desde CSS nativo"
+subtitle: "Trucos para acceder a datos y variables desde CSS, usa las función attr() y var() de CSS."
+date: "24 may 2023"
 tags: [
   {
     title: "HTML",
@@ -53,7 +53,7 @@ attr(data-width px, inherit);
 attr(data-something, "default");
 ```
 
-#### Importante Los valores `<type>` y `<fallback>` son tecnologias experimentales, verifica la [tabla de compatibilidad del navegador](https://developer.mozilla.org/en-US/docs/Web/CSS/attr#browser_compatibility) antes de usarla en produccion
+#### Importante: Los valores 'type' y 'fallback' son tecnologias experimentales, verifica la [tabla de compatibilidad del navegador](https://developer.mozilla.org/en-US/docs/Web/CSS/attr#browser_compatibility) antes de usarla en produccion.
 
 La funcion `attr()` permite acceder a los atributos de tus tags HTML directamente en CSS, un caso frecuente es ser llamada dentro de un pseudo elemento `::before` o `::after`  para pasarle contenido dinamico al pseudo elemento mediante la propiedad `content`.
 
@@ -73,7 +73,7 @@ Luego en CSS podemos acceder al valor de este atributo usando la funcion `attr( 
 }
 ```
 
-## Funcion attr() casos de uso:
+### Casos de uso:
 
 ## Crear Tooltips automaticos
 
@@ -115,7 +115,7 @@ Y de esta forma podemos estilar y estandarizar todos los Tooltips de nuestra pag
 
 ## Usa Data Colors
 
-#### Importante: Los valores `<type>` y `<fallback>` son tecnologias experimentales, verifica la [tabla de compatibilidad del navegador](https://developer.mozilla.org/en-US/docs/Web/CSS/attr#browser_compatibility) antes de usarla en producción
+#### Importante: Los valores 'type' y 'fallback' son tecnologias experimentales, verifica la [tabla de compatibilidad del navegador](https://developer.mozilla.org/en-US/docs/Web/CSS/attr#browser_compatibility) antes de usarla en produccin.
 
 Podemos usar colores como variables y pasarlas como atributo HTML al CSS, esto es interesante si esos datos vienen desde una base de datos y queremos que nuestra UI dependa de ellos.
 
