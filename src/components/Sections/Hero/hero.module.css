@@ -10,6 +10,8 @@
 }
 
 .hero[data-page = 'home'] {
+  animation: var(--fadeInUp);
+  animation-delay: .2s;
   align-items: center;
   gap: .5rem;
   min-height: 70vh;
@@ -50,6 +52,8 @@
 }
 
 .title[data-page='home'] {
+  animation: var(--fadeInUp);
+  animation-delay: .6s;
   text-align: center;
   letter-spacing: -0.35rem;
   font-size: var(--font-size-7xl);
@@ -99,6 +103,8 @@
 
 .hero[data-page = 'home'] .description {
   text-align: center;
+  animation: var(--fadeInUp);
+  animation-delay: .9s;
   line-height: var(--font-size-3xl);
 }
 
