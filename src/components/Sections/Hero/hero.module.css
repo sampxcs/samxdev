@@ -55,7 +55,7 @@
 .title[data-page='home'] {
   opacity: 0;
   animation: var(--fadeInUp);
-  animation-delay: .6s;
+  animation-delay: .3s;
   text-align: center;
   letter-spacing: -0.35rem;
   font-size: var(--font-size-7xl);
@@ -107,7 +107,7 @@
   opacity: 0;
   text-align: center;
   animation: var(--fadeInUp);
-  animation-delay: .9s;
+  animation-delay: .4s;
   line-height: var(--font-size-3xl);
 }
 
