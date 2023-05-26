@@ -1,5 +1,7 @@
 import { getPostMetadata } from '@/utils/getPostMetadata'
 
+import styles from './page.module.css'
+
 import CardAside from '@/components/Cards/CardAside'
 import Aside from '@/components/Sections/Aside'
 import Container from '@/components/Sections/Container'
@@ -12,6 +14,8 @@ export default function Home () {
 
   return (
     <div>
+      <div className={styles.bg}/>
+      <Particles />
       <Hero
         header='samxdev'
         title='Explorando el Mundo Digital Un código a la vez'
@@ -24,7 +28,6 @@ export default function Home () {
           <CardAside title='Los más vistos' data={postMetadata} />
         </Aside>
       </Container>
-      <Particles />
     </div>
   )
 }

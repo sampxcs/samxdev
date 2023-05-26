@@ -1,7 +1,9 @@
 .button {
   align-items: center;
   aspect-ratio: 1/1;
-  background-color: var(--color-background-500);
+  background-color: var(--color-background-600);
+  transition: var(--transition);
+  transition-property: var(--transition-colors);
   color: var(--color-white);
   border-radius: 100%;
   cursor: pointer;
@@ -9,6 +11,10 @@
   justify-content: center;
   width: 2.5rem;
   border: none;
+}
+
+.button:hover {
+  background-color: var(--color-background-500);
 }
 
 .button[data-size='lg'] {

@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 1.5rem;
   width: 100%;
+  animation: var(--fadeInUp);
 }
 
 .title {
