@@ -1,7 +1,7 @@
 import styles from './input.module.css'
 
-export default function Input ({ type, placeholder, style }: any) {
+export default function Input ({ type, placeholder, style, id }: any) {
   return (
-    <input type={type} placeholder={placeholder} className={styles.input} data-style={style}/>
+    <input id={id} type={type} placeholder={placeholder} className={styles.input} data-style={style}/>
   )
 }

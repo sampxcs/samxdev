@@ -1,20 +1,29 @@
 .footer {
   align-items: center;
-  background-color: var(--color-background-800);
+  background: var(--color-background-900);
+  background: linear-gradient(180deg, var(--color-background-800) 0%, var(--color-background-900) 30%);
   display: flex;
   flex-direction: column;
   font-size: 1rem;
   gap: 4rem;
-  justify-content: center;
+  height: 100vh;
+  justify-content: flex-end;
   padding: 1.5rem;
+  z-index: 10;
+  position: relative;
 }
 
 .content {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
-  max-width: var(--screen-lg);
-  padding: 2rem 1rem;
+  padding: 3rem 4rem;
+  position: relative;
+  z-index: 10;
+  background-color: var(--color-background-80);
+  border: 1px solid var(--color-background-60);
+  border-radius: var(--rounded-lg);
+  box-shadow: var(--shadow-md);
 }
 
 .section {

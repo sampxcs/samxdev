@@ -1,10 +1,10 @@
-import Blog from '@/components/Sections/Blog'
+import Container from '@/components/Sections/Container'
 import Categories from '@/components/Sections/Categories'
 
 export default function CategoriesPage () {
   return (
-    <Blog>
+    <Container>
       <Categories />
-    </Blog>
+    </Container>
   )
 }
