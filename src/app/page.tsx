@@ -15,7 +15,7 @@ export default function Home () {
       <Hero
         header='samxdev'
         title='Explorando el Mundo Digital Un código a la vez'
-        description='Aquí encontraras contenido sobre desarrollo tegnología y programación tanto para los que esten aprendiendo como los que ya lleven un tiempo dentro del mundo IT.'
+        description='Aquí encontraras contenido sobre desarrollo, tegnología y programación tanto para los que esten aprendiendo como los que ya lleven un tiempo dentro del mundo IT.'
         page='home'
       />
       <Container>
