@@ -1,7 +1,7 @@
 import CardAside from '@/components/Cards/CardAside'
 import Input from '@/components/Forms/Input'
 import Aside from '@/components/Sections/Aside'
-import Blog from '@/components/Sections/Blog'
+import Container from '@/components/Sections/Container'
 import Feed from '@/components/Sections/Feed'
 import { getPostMetadata } from '@/utils/getPostMetadata'
 
@@ -24,13 +24,13 @@ export default function CategoriesPage ({ params }: any) {
   const { tag } = params
 
   return (
-    <Blog>
+    <Container>
       <Feed filter={tag}/>
       <Aside>
         <Input type='text' placeholder='Buscar' />
         <CardAside title='Top Categorías' data={postMetadata} type='tags' />
         <CardAside title='Los más vistos' data={postMetadata} />
       </Aside>
-    </Blog>
+    </Container>
   )
 }

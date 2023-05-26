@@ -1,0 +1,7 @@
+.container {
+  display: flex;
+  gap: 4rem;
+  max-width: var(--screen-lg);
+  margin: 0 auto;
+  height: fit-content;
+}
