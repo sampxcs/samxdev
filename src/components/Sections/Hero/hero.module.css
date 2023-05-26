@@ -10,6 +10,7 @@
 }
 
 .hero[data-page = 'home'] {
+  opacity: 0;
   animation: var(--fadeInUp);
   animation-delay: .2s;
   align-items: center;
@@ -52,6 +53,7 @@
 }
 
 .title[data-page='home'] {
+  opacity: 0;
   animation: var(--fadeInUp);
   animation-delay: .6s;
   text-align: center;
@@ -102,6 +104,7 @@
 }
 
 .hero[data-page = 'home'] .description {
+  opacity: 0;
   text-align: center;
   animation: var(--fadeInUp);
   animation-delay: .9s;
