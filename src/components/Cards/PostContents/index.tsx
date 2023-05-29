@@ -56,7 +56,7 @@ export default function PostContents () {
                 <li key={title} data-active={isActive.id === id && isActive.state}>
                   <a href={`/blog/${slug}`} className={styles.link}>
                     <span>{title}</span>
-                    <ArrowRight width='1.5rem' />
+                    <ArrowRight width='1rem' />
                   </a>
                 </li>
               ))}

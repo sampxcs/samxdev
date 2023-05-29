@@ -10,6 +10,7 @@ import { getPostContent } from '@/utils/getPostContent'
 import { getPostMetadata } from '@/utils/getPostMetadata'
 import PostContents from '@/components/Cards/PostContents'
 import PreCode from '@/components/Elements/PreCode'
+import { redirect } from 'next/navigation'
 
 export const generateStaticParams = async () => {
   const posts = getPostMetadata()
@@ -18,6 +19,8 @@ export const generateStaticParams = async () => {
 
 export const generateMetadata = async ({ params }: any) => {
   const { data } = getPostContent(params.slug)
+  if (!data) return
+
   return {
     title: data.title,
     description: data.subtitle
@@ -27,6 +30,9 @@ export const generateMetadata = async ({ params }: any) => {
 export default function Page ({ params }: any) {
   const { slug } = params
   const { content, data } = getPostContent(slug)
+
+  if (!data) redirect('/404')
+
   const postMetadata = getPostMetadata()
 
   return (

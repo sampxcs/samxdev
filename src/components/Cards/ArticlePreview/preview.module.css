@@ -28,6 +28,7 @@
 
 .article p {
   color: var(--color-background-100);
+  font-weight: 500;
 }
 
 .tags {

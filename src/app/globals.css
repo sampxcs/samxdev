@@ -1,4 +1,6 @@
 :root {
+  --color-primary-05: hsla(205, 90%, 48%, 0.05);
+  --color-primary-50: #0C8CE966;
   --color-primary-100: #E1F1FD;
   --color-primary-200: #C3E3FA;
   --color-primary-300: #86C6F4;
@@ -103,12 +105,12 @@
 
 ::-webkit-scrollbar {
   background-color: var(--color-background-600);
-  width: 12px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--color-background-400);
-  border-radius: var(--rounded-xl);
+  border-radius: 1px;
 }
 
 ::selection {

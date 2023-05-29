@@ -28,7 +28,7 @@
 .title {
   animation: gradient 15s ease infinite;
   font-size: var(--font-size-6xl);
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: -0.16rem;
   line-height: var(--font-size-6xl);
   max-width: 62rem;

@@ -57,7 +57,7 @@ export default function Header () {
           ))}
         </ul>
       </nav>
-      <ButtonCircle>
+      <ButtonCircle href='/'>
         <Theme width='1rem' />
       </ButtonCircle>
     </header>
