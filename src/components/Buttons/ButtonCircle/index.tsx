@@ -5,25 +5,30 @@ import Link from 'next/link'
 export default function ButtonCircle ({ children, size, onClick, type, tooltip, href }: any) {
   if (onClick) {
     return (
-      <ButtonRipple style={{ borderRadius: '100%' }}>
-        <button
+      <button
           type={type}
           onClick={onClick}
-          className={styles.button}
-          data-size={size}
           data-tooltip={tooltip}
         >
-          {children}
-        </button>
-      </ButtonRipple>
+        <ButtonRipple style={{ borderRadius: '100%' }}>
+          <span
+            className={styles.button}
+            data-size={size}
+          >
+            {children}
+          </span>
+        </ButtonRipple>
+      </button>
     )
   }
 
   return (
-    <ButtonRipple style={{ borderRadius: '100%' }}>
-      <Link href={href} className={styles.button} data-tooltip='Cambiar Tema'>
-        {children}
+      <Link href={href} data-tooltip='Cambiar Tema'>
+        <ButtonRipple style={{ borderRadius: '100%' }}>
+            <span className={styles.button}>
+              {children}
+            </span>
+        </ButtonRipple>
       </Link>
-    </ButtonRipple>
   )
 }

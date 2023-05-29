@@ -1,6 +1,6 @@
 .precode {
   position: relative;
-  display: flex;
+  display: grid;
   justify-content: space-between;
   background-color: var(--color-background-600);
   font-size: var(--font-size-md);
@@ -9,6 +9,7 @@
   transition: var(--transition);
   margin: 4rem 0;
   box-shadow: var(--shadow-sm);
+  grid-template-columns: 1fr 4rem;
 }
 
 .precode:hover {
@@ -47,9 +48,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: 4rem;
-  min-width: 4rem;
-  min-width: 4rem;
   padding: 1.25rem 1.25rem 0 0;
   font-size: .5rem;
   animation: var(--fadeIn);

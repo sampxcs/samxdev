@@ -5,17 +5,19 @@ import { useMousePosition } from '@/hooks/useMousePosition'
 import styles from './particles.module.css'
 
 interface ParticlesProps {
-  quantity?: number;
-  staticity?: number;
-  ease?: number;
-  refresh?: boolean;
+  quantity?: number
+  staticity?: number
+  ease?: number
+  refresh?: boolean
+  style?: object
 }
 
 export default function Particles ({
   quantity = 30,
   staticity = 50,
   ease = 50,
-  refresh = false
+  refresh = false,
+  style
 }: ParticlesProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const canvasContainerRef = useRef<HTMLDivElement>(null)
@@ -226,7 +228,7 @@ export default function Particles ({
   }
 
   return (
-    <div className={styles.particles} ref={canvasContainerRef} aria-hidden="true">
+    <div className={styles.particles} style={style} ref={canvasContainerRef} aria-hidden="true">
       <canvas ref={canvasRef} />
     </div>
   )
