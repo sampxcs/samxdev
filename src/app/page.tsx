@@ -6,6 +6,11 @@ import Blog from '@/components/Sections/Blog'
 import Feed from '@/components/Sections/Feed'
 import Hero from '@/components/Sections/Hero'
 
+
+
+
+// Hola 2
+
 export default function Home () {
   const postMetadata = getPostMetadata()
 
