@@ -1,5 +1,5 @@
 :root {
-  --color-primary-05: hsla(205, 90%, 48%, 0.05);
+  --color-primary-05: #0c8de90d;
   --color-primary-50: #0C8CE966;
   --color-primary-100: #E1F1FD;
   --color-primary-200: #C3E3FA;
@@ -10,6 +10,7 @@
   --color-primary-700: #064675;
   --color-primary-800: #03233B;
   --color-primary-900: #02121E;
+  --color-secundary-05: #7B61FF0d;
   --color-secundary-100: #EFECFF;
   --color-secundary-200: #DED8FF;
   --color-secundary-300: #BDB0FF;

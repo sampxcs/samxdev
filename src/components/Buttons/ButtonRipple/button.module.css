@@ -19,7 +19,7 @@
   height: 20px;
   position: absolute;
   z-index: 999;
-  background: var(--color-background-400);
+  backdrop-filter: invert(100%);
   display: block;
   content: '';
   border-radius: 100%;

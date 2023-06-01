@@ -20,7 +20,7 @@ export default function BlogPage () {
       <Container>
         <Feed />
         <Aside>
-          <Input type='text' placeholder='Buscar artículo...' />
+          <Input type='text' placeholder='Buscar artículo...' role='search'/>
           <CardAside title='Los más vistos' data={postMetadata} />
           <CardAside title='Top Categorías' data={postMetadata} type='tags' />
         </Aside>
