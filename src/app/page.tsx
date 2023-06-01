@@ -15,7 +15,7 @@ export default function Home () {
   return (
     <div>
       <div className={styles.bg}/>
-      <Particles />
+      <Particles style={{ top: '0', left: '0' }} />
       <Hero
         header='samxdev'
         title='Explorando el Mundo Digital Un código a la vez'

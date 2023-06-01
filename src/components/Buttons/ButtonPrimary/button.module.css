@@ -1,6 +1,6 @@
 .button {
   align-items: center;
-  background-color: var(--color-primary-500);
+  background-color: var(--color-secundary-500);
   color: var(--color-white);
   cursor: pointer;
   display: flex;
@@ -12,4 +12,10 @@
 
 .button[data-size='lg'] {
   width: 3rem;
+}
+
+.button[data-size = 'xl'] {
+  font-weight: 600;
+  padding: 0.625rem 1.25rem;
+  font-size: var(--font-size-lg);
 }

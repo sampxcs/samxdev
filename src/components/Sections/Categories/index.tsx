@@ -13,7 +13,7 @@ export default function Categories () {
   return (
     <section className={styles.section}>
       <form className={styles.form}>
-        <Input id='search' placeholder='Buscar categoría...'/>
+        <Input id='search' placeholder='Buscar categoría...' role='search'/>
       </form>
       <ul className={styles.tags}>
         {tags.map(({ title, description }) => (

@@ -57,7 +57,7 @@ export default function Header () {
           ))}
         </ul>
       </nav>
-      <ButtonCircle href='/'>
+      <ButtonCircle type='button' tooltip='Cambiar tema' >
         <Theme width='1rem' />
       </ButtonCircle>
     </header>

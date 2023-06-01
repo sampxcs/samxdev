@@ -15,7 +15,7 @@ export default function ButtonPrimary ({ children, size, onClick, type, tooltip 
 
   return (
     <ButtonRipple style={{ borderRadius: '0.5rem' }}>
-      <Link href='' className={styles.button} data-tooltip={tooltip}>
+      <Link href='' className={styles.button} data-size={size} data-tooltip={tooltip}>
         {children}
       </Link>
     </ButtonRipple>

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import styles from './button.module.css'
+import ButtonRipple from '../ButtonRipple'
 
 export default function ButtonSecundary ({ children, size, onClick, type, tooltip }: any) {
   if (onClick) {
@@ -11,8 +12,10 @@ export default function ButtonSecundary ({ children, size, onClick, type, toolti
   }
 
   return (
-    <Link href='/' className={styles.button} data-tooltip={tooltip}>
-      {children}
-    </Link>
+    <ButtonRipple style={{ borderRadius: '0.5rem' }}>
+      <Link href='/' className={styles.button} data-size={size} data-tooltip={tooltip}>
+        {children}
+      </Link>
+    </ButtonRipple>
   )
 }
