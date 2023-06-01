@@ -9,6 +9,8 @@ import Feed from '@/components/Sections/Feed'
 import Hero from '@/components/Sections/Hero'
 import Particles from '@/components/Decorations/Particles'
 
+// hola
+
 export default function Home () {
   const postMetadata = getPostMetadata()
 
