@@ -1,5 +1,6 @@
 .container {
   position: fixed;
+  z-index: 100;
   bottom: 2rem;
   right: 2rem;
   color: var(--color-white);
@@ -11,4 +12,10 @@
 
 .container[data-visible = false] {
   animation: var(--fadeOutDown);
+}
+
+.container button {
+  opacity: 0;
+  animation: var(--fadeIn);
+  animation-delay: 1s;
 }

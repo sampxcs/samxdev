@@ -2,10 +2,24 @@
 title: "Building a QR code micro-app"
 subtitle: "Build a serverless 'hello-world' QR code app with Python and AWS."
 date: "3 jun 2022"
-tags: [{
-  title: "AWS",
-  description: "Amazon Web Services es una colección de servicios de computación en la nube pública que en conjunto forman una plataforma de computación en la nube, ofrecidas a través de Internet por Amazon.com. Es usado en aplicaciones populares como Dropbox, Foursquare, HootSuite."
-}]
+tags: [
+  {
+    title: "React",
+    description: "Amazon Web Services es una colección de servicios de computación en la nube pública que en conjunto forman una plataforma de computación en la nube, ofrecidas a través de Internet por Amazon.com. Es usado en aplicaciones populares como Dropbox, Foursquare, HootSuite."
+  },
+  {
+    title: "TypeScript",
+    description: "Amazon Web Services es una colección de servicios de computación en la nube pública que en conjunto forman una plataforma de computación en la nube, ofrecidas a través de Internet por Amazon.com. Es usado en aplicaciones populares como Dropbox, Foursquare, ,HootSuite."
+  },
+  {
+    title: "Python",
+    description: "Amazon Web Services es una colección de servicios de computación en la nube pública que en conjunto forman una plataforma de computación en la nube, ofrecidas a través de Internet por Amazon.com. Es usado en aplicaciones populares como Dropbox, Foursquare, ,HootSuite."
+  },
+  {
+    title: "AWS",
+    description: "Amazon Web Services es una colección de servicios de computación en la nube pública que en conjunto forman una plataforma de computación en la nube, ofrecidas a través de Internet por Amazon.com. Es usado en aplicaciones populares como Dropbox, Foursquare, ,HootSuite."
+  },
+]
 ---
 
 Ever since the pandemic started, I've noticed QR codes creeping into my daily life. Venue check-ins, digital menus at restaurants, and online payments.

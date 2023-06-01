@@ -7,8 +7,20 @@
   border: none;
   padding: .5rem 1rem;
   border-radius: var(--rounded-sm);
+  transition: var(--transition);
 }
 
 .button[data-size='lg'] {
   width: 3rem;
+}
+
+.button:hover {
+  background-color: var(--color-secundary-05);
+  color: var(--color-secundary-500);
+}
+
+.button[data-size = 'xl'] {
+  font-weight: 600;
+  padding: 0.625rem 1.25rem;
+  font-size: var(--font-size-lg);
 }

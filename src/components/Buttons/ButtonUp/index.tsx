@@ -34,7 +34,7 @@ function ButtonUp () {
 
   return (
     <div className={styles.container} data-visible={isVisible}>
-      <ButtonCircle type='button' size='lg' tooltip='Subir' onClick={() => handleClick()}>
+      <ButtonCircle type='button' size='lg' tooltip='Subir' onClick={handleClick}>
         <ArrowUp width='1rem' />
       </ButtonCircle>
     </div>

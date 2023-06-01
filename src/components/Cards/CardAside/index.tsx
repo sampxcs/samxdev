@@ -33,7 +33,7 @@ export default function CardAside ({ title, data, type = 'list', theme }: any) {
           <li key={title}>
             <Link href={`/blog/${slug}`} className={styles.link}>
               <span>{title}</span>
-              <ArrowRight width='1.5rem' />
+              <ArrowRight width='1rem' />
             </Link>
           </li>
         ))}

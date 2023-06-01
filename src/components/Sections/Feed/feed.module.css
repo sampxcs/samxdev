@@ -1,11 +1,9 @@
 .section {
-  animation: var(--fadeInUp);
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  width: 40.75rem;
-  max-width: 40.75rem;
-  min-width:  40.75rem;
+  width: 100%;
+  animation: var(--fadeInUp);
 }
 
 .title {
@@ -33,16 +31,6 @@
   font-weight: 600;
 }
 
-.arrow {
-  animation: var(--fadeInRight);
-  color: var(--color-secundary-500);
-  display: none;
-}
-
 .link a:hover {
   color: var(--color-secundary-500);
-}
-
-.link a:hover .arrow {
-  display: block;
 }

@@ -3,13 +3,14 @@ import Markdown from 'markdown-to-jsx'
 import CardAside from '@/components/Cards/CardAside'
 import Article from '@/components/Sections/Article'
 import Aside from '@/components/Sections/Aside'
-import Blog from '@/components/Sections/Blog'
+import Container from '@/components/Sections/Container'
 import Hero from '@/components/Sections/Hero'
 
 import { getPostContent } from '@/utils/getPostContent'
 import { getPostMetadata } from '@/utils/getPostMetadata'
 import PostContents from '@/components/Cards/PostContents'
 import PreCode from '@/components/Elements/PreCode'
+import { redirect } from 'next/navigation'
 
 export const generateStaticParams = async () => {
   const posts = getPostMetadata()
@@ -18,6 +19,8 @@ export const generateStaticParams = async () => {
 
 export const generateMetadata = async ({ params }: any) => {
   const { data } = getPostContent(params.slug)
+  if (!data) return
+
   return {
     title: data.title,
     description: data.subtitle
@@ -27,6 +30,9 @@ export const generateMetadata = async ({ params }: any) => {
 export default function Page ({ params }: any) {
   const { slug } = params
   const { content, data } = getPostContent(slug)
+
+  if (!data) redirect('/404')
+
   const postMetadata = getPostMetadata()
 
   return (
@@ -37,7 +43,7 @@ export default function Page ({ params }: any) {
         date={data.date}
         slug={slug}
       />
-      <Blog>
+      <Container>
         <Article tags={data.tags}>
           <Markdown
             options={{
@@ -59,7 +65,7 @@ export default function Page ({ params }: any) {
           <CardAside title='Los más vistos' data={postMetadata} />
           <PostContents />
         </Aside>
-      </Blog>
+      </Container>
     </div>
   )
 }

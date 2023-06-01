@@ -8,7 +8,7 @@ import ButtonUp from '@/components/Buttons/ButtonUp'
 import Footer from '@/components/Sections/Footer'
 import NewsLetterForm from '@/components/Forms/NewsLetterForm'
 
-const inter = Inter({ weight: ['300', '400', '500', '700'], subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Samxdev',
@@ -19,14 +19,14 @@ export default function RootLayout ({ children }: { children: React.ReactNode })
   return (
     <html lang="en">
       <body className={inter.className}>
+        <LightMove />
+        <ButtonUp />
         <Header />
         <main>
           {children}
         </main>
         <NewsLetterForm />
         <Footer />
-        <ButtonUp />
-        <LightMove />
       </body>
     </html>
   )

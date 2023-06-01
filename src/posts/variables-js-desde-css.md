@@ -1,6 +1,6 @@
 ---
 title: "Accede a variables de JS desde CSS nativo"
-subtitle: "Es una practica comun añadirle estilos a nuestros componente directamente en JavaScript con estilos en linea cuando necesitamos que estos dependan de ciertos datos. Sin saber que podemos hacer exactamente lo mismo con CSS nativo sin ningun pre-procesador ni libreria. Aca te muestro algunos trucos que puedes hacer para acceder a variables dentro de CSS. Usa 'attr()' y 'var()'."
+subtitle: "Es una practica comun añadirle estilos a nuestros componente directamente en JavaScript con estilos en linea cuando necesitamos que estos dependan de ciertos datos. Sin saber que podemos hacer exactamente lo mismo con CSS nativo sin ningun pre-procesador ni libreria. Aca te muestro algunos trucos que puedes hacer para acceder a variables dentro de CSS."
 date: "24 may 2023"
 tags: [
   {
