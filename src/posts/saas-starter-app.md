@@ -37,6 +37,14 @@ const getPostContent = (slug: string) => {
 }
 ```
 
+```html
+const getPostContent = (slug: string) => {
+  const file = `src/posts/${slug}.md`
+  const content = fs.readFileSync(file, 'utf-8')
+  return content
+}
+```
+
 ### Authentication
 
 **Don't roll your own auth!** It's hard, and mistakes can be devastating to a business. With that said, I did it anyway — mostly to learn from it. Here's also some [discussion on Hackernews](https://news.ycombinator.com/item?id=22001918) on why you might want to build your own auth.
