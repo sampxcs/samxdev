@@ -12,7 +12,7 @@ interface ParticlesProps {
   style?: object
 }
 
-export default function Particles ({
+export default function Particles({
   quantity = 30,
   staticity = 50,
   ease = 50,
@@ -69,17 +69,17 @@ export default function Particles ({
   }
 
   type Circle = {
-  x: number;
-  y: number;
-  translateX: number;
-  translateY: number;
-  size: number;
-  alpha: number;
-  targetAlpha: number;
-  dx: number;
-  dy: number;
-  magnetism: number;
-  };
+    x: number
+    y: number
+    translateX: number
+    translateY: number
+    size: number
+    alpha: number
+    targetAlpha: number
+    dx: number
+    dy: number
+    magnetism: number
+  }
 
   const resizeCanvas = () => {
     if (canvasContainerRef.current && canvasRef.current && context.current) {
@@ -137,12 +137,7 @@ export default function Particles ({
 
   const clearContext = () => {
     if (context.current) {
-      context.current.clearRect(
-        0,
-        0,
-        canvasSize.current.w,
-        canvasSize.current.h
-      )
+      context.current.clearRect(0, 0, canvasSize.current.w, canvasSize.current.h)
     }
   }
 
@@ -162,8 +157,7 @@ export default function Particles ({
     start2: number,
     end2: number
   ): number => {
-    const remapped =
-      ((value - start1) * (end2 - start2)) / (end1 - start1) + start2
+    const remapped = ((value - start1) * (end2 - start2)) / (end1 - start1) + start2
     return remapped > 0 ? remapped : 0
   }
 
@@ -178,9 +172,7 @@ export default function Particles ({
         canvasSize.current.h - circle.y - circle.translateY - circle.size // distance from bottom edge
       ]
       const closestEdge = edge.reduce((a, b) => Math.min(a, b))
-      const remapClosestEdge = parseFloat(
-        remapValue(closestEdge, 0, 20, 0, 1).toFixed(2)
-      )
+      const remapClosestEdge = parseFloat(remapValue(closestEdge, 0, 20, 0, 1).toFixed(2))
       if (remapClosestEdge > 1) {
         circle.alpha += 0.02
         if (circle.alpha > circle.targetAlpha) {
@@ -192,11 +184,9 @@ export default function Particles ({
       circle.x += circle.dx
       circle.y += circle.dy
       circle.translateX +=
-        (mouse.current.x / (staticity / circle.magnetism) - circle.translateX) /
-        ease
+        (mouse.current.x / (staticity / circle.magnetism) - circle.translateX) / ease
       circle.translateY +=
-        (mouse.current.y / (staticity / circle.magnetism) - circle.translateY) /
-        ease
+        (mouse.current.y / (staticity / circle.magnetism) - circle.translateY) / ease
       // circle gets out of the canvas
       if (
         circle.x < -circle.size ||

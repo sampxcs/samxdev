@@ -5,18 +5,16 @@ import { Space_Grotesk as SpaceGrotesk } from 'next/font/google'
 
 const spaceGrotesk = SpaceGrotesk({ weight: ['300', '500', '700'], subsets: ['latin'] })
 
-export default function NotFound () {
+export default function NotFound() {
   return (
-    <div className={styles.container} >
+    <div className={styles.container}>
       <div className={`${styles.text} ${spaceGrotesk.className}`}>
         <h1>404</h1>
         <div>
           <p>¡Ups! No podemos encontrar la página que estabas buscando.</p>
           <small>El enlace que seguiste no existe o esta roto.</small>
         </div>
-        <ButtonSecundary href='/'>
-            Vover a casa
-        </ButtonSecundary>
+        <ButtonSecundary href="/">Vover a casa</ButtonSecundary>
       </div>
       <div className={styles.content}>
         <div className={styles.astronaut}>

@@ -2,7 +2,7 @@
   animation: var(--fadeInUp);
   display: flex;
   flex-direction: column;
-  gap: .25rem;
+  gap: 0.25rem;
   justify-content: center;
   max-width: var(--screen-lg);
   margin: 0 auto;
@@ -15,10 +15,10 @@
   justify-content: center;
 }
 
-.hero[data-page = 'home'] {
+.hero[data-page='home'] {
   opacity: 0;
   animation: var(--fadeInUp);
-  animation-delay: .2s;
+  animation-delay: 0.2s;
   align-items: center;
   gap: 2.5rem;
   min-height: 35rem;
@@ -26,8 +26,8 @@
   margin-bottom: 4rem;
 }
 
-.hero[data-page = 'home'] .content {
-  gap: .5rem;
+.hero[data-page='home'] .content {
+  gap: 0.5rem;
   align-items: center;
 }
 
@@ -43,14 +43,14 @@
   letter-spacing: -0.16rem;
   line-height: var(--font-size-6xl);
   max-width: 62rem;
-  padding-bottom: .5rem;
-  padding-right: .25rem;
+  padding-bottom: 0.5rem;
+  padding-right: 0.25rem;
 }
 
 .title_container[data-page='home'] {
   opacity: 0;
   animation: var(--fadeInUp);
-  animation-delay: .3s;
+  animation-delay: 0.3s;
 }
 
 .title[data-page='blog'] {
@@ -76,7 +76,12 @@
   line-height: var(--font-size-7xl);
   padding-bottom: 1.5rem;
   background-clip: text;
-  background: linear-gradient(-45deg, var(--color-secundary-500), var(--color-ternay-500), var(--color-secundary-500));
+  background: linear-gradient(
+    -45deg,
+    var(--color-secundary-500),
+    var(--color-ternay-500),
+    var(--color-secundary-500)
+  );
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -92,22 +97,22 @@
 
 .title[data-page='about'] {
   background-clip: text;
-  background: linear-gradient(-45deg, #0969AF, #0C8CE9);
+  background: linear-gradient(-45deg, #0969af, #0c8ce9);
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .description {
@@ -117,11 +122,11 @@
   max-width: 45rem;
 }
 
-.hero[data-page = 'home'] .description {
+.hero[data-page='home'] .description {
   opacity: 0;
   text-align: center;
   animation: var(--fadeInUp);
-  animation-delay: .4s;
+  animation-delay: 0.4s;
   line-height: var(--font-size-3xl);
 }
 
@@ -130,14 +135,14 @@
   color: var(--color-background-300);
   display: flex;
   align-items: center;
-  gap: .5rem;
-  margin-bottom: .5rem;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .link {
   display: flex;
   align-items: center;
-  gap: .25rem;
+  gap: 0.25rem;
 }
 
 .link:hover {

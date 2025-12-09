@@ -6,11 +6,11 @@
   color: var(--color-white);
 }
 
-.container[data-visible = true] {
+.container[data-visible='true'] {
   animation: var(--fadeInUp);
 }
 
-.container[data-visible = false] {
+.container[data-visible='false'] {
   animation: var(--fadeOutDown);
 }
 

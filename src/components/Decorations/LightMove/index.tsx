@@ -3,7 +3,7 @@
 import styles from './light.module.css'
 import { useMousePosition } from '@/hooks/useMousePosition'
 
-export default function LightMove () {
+export default function LightMove() {
   const cords = useMousePosition()
 
   return (
@@ -13,7 +13,7 @@ export default function LightMove () {
         style={{
           top: `calc(${cords.y / 10}px - 25%)`,
           right: `-${cords.x / 10}px`,
-          filter: `blur(${200 + (cords.x / 20)}px)`
+          filter: `blur(${200 + cords.x / 20}px)`
         }}
       />
     </div>

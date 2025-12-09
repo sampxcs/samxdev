@@ -1,5 +1,3 @@
-export default function Comments () {
-  return (
-    <section>Comments</section>
-  )
+export default function Comments() {
+  return <section>Comments</section>
 }

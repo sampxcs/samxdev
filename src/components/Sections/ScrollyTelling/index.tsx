@@ -7,7 +7,17 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
 import styles from './scrollytelling.module.css'
 
-export default function Section ({ children, animation, size, style }: {children: ReactNode, animation: string, size?: string, style?: {} }) {
+export default function Section({
+  children,
+  animation,
+  size,
+  style
+}: {
+  children: ReactNode
+  animation: string
+  size?: string
+  style?: {}
+}) {
   const ref = useRef(null)
 
   useEffect(() => {
@@ -30,7 +40,13 @@ export default function Section ({ children, animation, size, style }: {children
   }, [])
 
   return (
-    <div ref={ref} data-animation={animation} data-size={size} className={styles.container} style={style}>
+    <div
+      ref={ref}
+      data-animation={animation}
+      data-size={size}
+      className={styles.container}
+      style={style}
+    >
       {children}
     </div>
   )

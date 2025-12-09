@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: space-between;
   color: var(--color-background-300);
-  padding: .25rem 0;
+  padding: 0.25rem 0;
   font-weight: 600;
 }
 
@@ -42,7 +42,7 @@
   display: flex;
   list-style: none;
   flex-wrap: wrap;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .tags .link {
@@ -50,7 +50,7 @@
   border-radius: var(--rounded-sm);
   color: var(--color-white);
   font-size: var(--font-size-sm);
-  padding: .5rem .75rem;
+  padding: 0.5rem 0.75rem;
   animation: gradient 3s ease infinite;
 }
 
@@ -60,13 +60,13 @@
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

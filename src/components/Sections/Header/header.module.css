@@ -35,17 +35,17 @@
   color: var(--data-color);
 }
 
-.link[data-active = true] {
+.link[data-active='true'] {
   color: var(--data-color);
 }
 
-.link[data-active = true]::before {
+.link[data-active='true']::before {
   animation: var(--fadeIn);
   background-color: var(--data-color);
   border-radius: var(--rounded-lg);
   bottom: -1.75rem;
-  content: "";
-  height: .25rem;
+  content: '';
+  height: 0.25rem;
   left: calc(50% - 1.5rem);
   position: absolute;
   width: 3rem;

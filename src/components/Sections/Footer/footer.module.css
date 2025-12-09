@@ -1,7 +1,11 @@
 .footer {
   align-items: center;
   background: var(--color-background-900);
-  background: linear-gradient(180deg, var(--color-background-800) 0%, var(--color-background-900) 30%);
+  background: linear-gradient(
+    180deg,
+    var(--color-background-800) 0%,
+    var(--color-background-900) 30%
+  );
   display: flex;
   flex-direction: column;
   font-size: 1rem;
@@ -64,7 +68,7 @@
   transition-property: var(--transition-colors);
   display: flex;
   width: 100%;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .link:hover {

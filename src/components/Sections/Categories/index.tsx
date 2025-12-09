@@ -3,7 +3,7 @@ import styles from './categories.module.css'
 import CategoryPreview from '@/components/Cards/CategoryPreview'
 import Input from '@/components/Forms/Input'
 
-export default function Categories () {
+export default function Categories() {
   const postMetadeta = getPostMetadata()
 
   const dataTags = Array.from(postMetadeta.map(({ tags }: any) => tags).flat())
@@ -13,7 +13,7 @@ export default function Categories () {
   return (
     <section className={styles.section}>
       <form className={styles.form}>
-        <Input id='search' placeholder='Buscar categoría...' role='search'/>
+        <Input id="search" placeholder="Buscar categoría..." role="search" />
       </form>
       <ul className={styles.tags}>
         {tags.map(({ title, description }) => (

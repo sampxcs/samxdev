@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   border: none;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: var(--rounded-sm);
   transition: var(--transition);
 }
@@ -19,7 +19,7 @@
   color: var(--color-secundary-500);
 }
 
-.button[data-size = 'xl'] {
+.button[data-size='xl'] {
   font-weight: 600;
   padding: 0.625rem 1.25rem;
   font-size: var(--font-size-lg);

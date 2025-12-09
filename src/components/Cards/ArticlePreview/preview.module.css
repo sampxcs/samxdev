@@ -14,7 +14,7 @@
 .article header {
   align-items: center;
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .title {
@@ -34,14 +34,14 @@
 .tags {
   display: flex;
   font-size: var(--font-size-xs);
-  gap: .5rem;
+  gap: 0.5rem;
   list-style: none;
 }
 
 .tag {
   background-color: var(--color-background-600);
   border-radius: var(--rounded-sm);
-  padding: .5rem .75rem;
+  padding: 0.5rem 0.75rem;
   transition-property: var(--transition-colors);
   transition: var(--transition);
 }
@@ -49,7 +49,7 @@
 .small {
   align-items: center;
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .arrow {
@@ -70,4 +70,3 @@
 .article:hover .arrow {
   display: block;
 }
-

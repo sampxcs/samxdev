@@ -32,12 +32,12 @@ const links = [
   }
 ]
 
-export default function Header () {
+export default function Header() {
   const pathname = usePathname()
 
   return (
     <header className={styles.header}>
-      <Link href='/'>
+      <Link href="/">
         <Avatar />
       </Link>
       <nav className={styles.nav}>
@@ -57,8 +57,8 @@ export default function Header () {
           ))}
         </ul>
       </nav>
-      <ButtonCircle type='button' tooltip='Cambiar tema' >
-        <Theme width='1rem' />
+      <ButtonCircle type="button" tooltip="Cambiar tema">
+        <Theme width="1rem" />
       </ButtonCircle>
     </header>
   )

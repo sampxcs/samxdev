@@ -5,15 +5,15 @@
   opacity: 0;
 }
 
-.container[data-animation = 'fadeInLeft'] {
+.container[data-animation='fadeInLeft'] {
   transform: translateY(0) translateX(-30px);
 }
 
-.container[data-animation = 'fadeInUp'] {
+.container[data-animation='fadeInUp'] {
   transform: translateY(4rem) translateX(0);
 }
 
-.container[data-animation = 'fadeInUp'][data-size = 'sm'] {
+.container[data-animation='fadeInUp'][data-size='sm'] {
   transform: translateY(2rem) translateX(0);
   opacity: 1;
 }

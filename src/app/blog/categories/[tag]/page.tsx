@@ -19,17 +19,17 @@ export const generateMetadata = async ({ params }: any) => {
   }
 }
 
-export default function CategoriesPage ({ params }: any) {
+export default function CategoriesPage({ params }: any) {
   const postMetadata = getPostMetadata()
   const { tag } = params
 
   return (
     <Container>
-      <Feed filter={tag}/>
+      <Feed filter={tag} />
       <Aside>
-        <Input type='text' placeholder='Buscar' />
-        <CardAside title='Top Categorías' data={postMetadata} type='tags' />
-        <CardAside title='Los más vistos' data={postMetadata} />
+        <Input type="text" placeholder="Buscar" />
+        <CardAside title="Top Categorías" data={postMetadata} type="tags" />
+        <CardAside title="Los más vistos" data={postMetadata} />
       </Aside>
     </Container>
   )

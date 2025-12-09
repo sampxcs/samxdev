@@ -1,13 +1,13 @@
 .avatar {
   align-items: center;
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
   justify-content: center;
-  transition: opacity .2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .avatar:hover {
-  opacity: .85;
+  opacity: 0.85;
 }
 
 .picture {

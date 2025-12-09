@@ -27,7 +27,7 @@ export const generateMetadata = async ({ params }: any) => {
   }
 }
 
-export default function Page ({ params }: any) {
+export default function Page({ params }: any) {
   const { slug } = params
   const { content, data } = getPostContent(slug)
 
@@ -37,12 +37,7 @@ export default function Page ({ params }: any) {
 
   return (
     <div>
-      <Hero
-        title={data.title}
-        page='post'
-        date={data.date}
-        slug={slug}
-      />
+      <Hero title={data.title} page="post" date={data.date} slug={slug} />
       <Container>
         <Article tags={data.tags}>
           <Markdown
@@ -61,8 +56,8 @@ export default function Page ({ params }: any) {
           </Markdown>
         </Article>
         <Aside>
-          <CardAside title='Top Categorías' data={postMetadata} type='tags' />
-          <CardAside title='Los más vistos' data={postMetadata} />
+          <CardAside title="Top Categorías" data={postMetadata} type="tags" />
+          <CardAside title="Los más vistos" data={postMetadata} />
           <PostContents />
         </Aside>
       </Container>

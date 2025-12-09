@@ -6,7 +6,7 @@ import styles from './button.module.css'
 import ButtonCircle from '../ButtonCircle'
 import ArrowUp from '@/components/Icons/ArrowUp'
 
-function ButtonUp () {
+function ButtonUp() {
   const [isVisible, setIsVisible] = useState(false)
 
   const toggleVisibility = (): void => {
@@ -34,8 +34,8 @@ function ButtonUp () {
 
   return (
     <div className={styles.container} data-visible={isVisible}>
-      <ButtonCircle type='button' size='lg' tooltip='Subir' onClick={handleClick}>
-        <ArrowUp width='1rem' />
+      <ButtonCircle type="button" size="lg" tooltip="Subir" onClick={handleClick}>
+        <ArrowUp width="1rem" />
       </ButtonCircle>
     </div>
   )

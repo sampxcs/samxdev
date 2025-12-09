@@ -9,7 +9,7 @@ import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import Copy from '@/components/Icons/Copy'
 import Check from '@/components/Icons/Check'
 
-export default function PreCode ({ children }: any) {
+export default function PreCode({ children }: any) {
   const [tooltip, setTooltip] = useState('Copiar')
   const { props } = children
   const lenguage = props.className?.replace('lang-', '')
@@ -29,7 +29,7 @@ export default function PreCode ({ children }: any) {
       <div className={styles.after}>
         <CopyToClipboard text={props.children}>
           <button data-tooltip={tooltip} onClick={handleCopy}>
-            {tooltip === 'Copiar' ? <Copy width='1rem' /> : <Check width='0.75rem' />}
+            {tooltip === 'Copiar' ? <Copy width="1rem" /> : <Check width="0.75rem" />}
           </button>
         </CopyToClipboard>
       </div>
